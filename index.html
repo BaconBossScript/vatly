@@ -627,40 +627,63 @@ function renderSA(q){
     verdict.className = 'sa-verdict ' + (st==='correct'?'ok':'no');
     verdict.textContent = st==='correct' ? '✓ Bạn đã trả lời đúng!' : '✗ Bạn đã trả lời sai';
     const label = document.createElement('strong');
-    label.textContent = 'Đáp án';
-    const aText = document.createTextNode(': ' + q.a);
+    label.textContent = 'Đáp án đúng';
+    const aText = document.createTextNode(q.a);
     ans.appendChild(verdict); ans.appendChild(label); ans.appendChild(aText);
     body.appendChild(ans);
     document.getElementById('btn-next').style.display = '';
 
+  } else if(st==='shown'){
+    // Đã xem đáp án – chờ tự đánh giá
+    const ans = document.createElement('div'); ans.className = 'sa-answer shown-ans';
+    const label = document.createElement('strong'); label.textContent = 'Đáp án đúng';
+    const aText = document.createTextNode(q.a);
+    ans.appendChild(label); ans.appendChild(aText);
+    body.appendChild(ans);
+
+    const prompt = document.createElement('div');
+    prompt.style.cssText = 'margin-top:12px;font-size:13px;color:var(--muted);font-weight:500;margin-bottom:8px';
+    prompt.textContent = 'So sánh với câu trả lời của bạn – bạn có đúng không?';
+    body.appendChild(prompt);
+
+    const row = document.createElement('div');
+    row.style.cssText = 'display:flex;gap:10px';
+    const ok = document.createElement('button'); ok.className='btn ok-btn'; ok.textContent='✓ Đúng';
+    ok.style.flex='1';
+    ok.onclick=()=>{
+      correct++;
+      document.getElementById('s-correct').textContent=correct;
+      answered[cur]='correct';
+      document.getElementById('nav-info').textContent='✓ Đúng';
+      render();
+    };
+    const no = document.createElement('button'); no.className='btn no-btn'; no.textContent='✗ Sai';
+    no.style.flex='1';
+    no.onclick=()=>{
+      wrong++;
+      document.getElementById('s-wrong').textContent=wrong;
+      answered[cur]='wrong';
+      document.getElementById('nav-info').textContent='✗ Sai';
+      render();
+    };
+    row.appendChild(ok); row.appendChild(no);
+    body.appendChild(row);
+    document.getElementById('btn-next').style.display = 'none';
+
   } else {
-    // Chưa trả lời – input và check
+    // Chưa trả lời
     const wrap = document.createElement('div'); wrap.className='sa-input-wrap';
     const inp = document.createElement('textarea'); inp.className='sa-input'; inp.placeholder='Nhập câu trả lời của bạn...';
     inp.id = 'sa-inp';
-    const sub = document.createElement('button'); sub.className='sa-submit'; sub.textContent='Kiểm tra';
-    
-    sub.onclick = ()=>{
-      const userInput = inp.value.trim();
-      // So sánh tự động
-      const isCorrect = userInput === q.a || userInput.toLowerCase() === q.a.toLowerCase();
-      
-      if(isCorrect){
-        correct++;
-        document.getElementById('s-correct').textContent=correct;
-        answered[cur]='correct';
-        document.getElementById('nav-info').textContent='✓ Đúng';
-      } else {
-        wrong++;
-        document.getElementById('s-wrong').textContent=wrong;
-        answered[cur]='wrong';
-        document.getElementById('nav-info').textContent='✗ Sai';
-      }
-      render();
-    };
-    
+    const sub = document.createElement('button'); sub.className='sa-submit'; sub.textContent='Xem đáp án';
+    sub.onclick = ()=>answerSA();
     wrap.appendChild(inp); wrap.appendChild(sub);
     body.appendChild(wrap);
+
+    const show = document.createElement('button'); show.className='btn'; show.textContent='Hiện đáp án ngay';
+    show.style='width:100%;margin-top:6px;font-size:12px';
+    show.onclick = ()=>answerSA();
+    body.appendChild(show);
   }
 }
 
