@@ -88,6 +88,29 @@ var MC = [
   {"c": "HN", "s": "Chủ đề 3: Phóng xạ", "q": "Chất phóng xạ Po, T = 138 ngày, ban đầu 100g. Sau bao lâu lượng Po chỉ còn 1g?", "o": ["916,85 ngày", "834,45 ngày", "653,28 ngày", "548,69 ngày"], "a": 0},
   {"c": "HN", "s": "Chủ đề 3: Phóng xạ", "q": "Một đồng vị phóng xạ có chu kì bán rã T. Cứ sau bao lâu thì số hạt nhân bị phân rã bằng ba lần số hạt nhân còn lại?", "o": ["0,5T", "3T", "2T", "T"], "a": 2},
   {"c": "HN", "s": "Chủ đề 3: Phóng xạ", "q": "Po phân rã α thành Pb. T_Po = 138 ngày. Tại t₁: N_Po/N_Pb = 1/3. Tại t₂ = t₁ + 276 ngày, tỉ số N_Po/N_Pb bằng", "o": ["1/15", "2/15", "1/25", "2/25"], "a": 0},
+
+  // ===== ĐỀ 0001 – PHẦN I: MC =====
+  // Đáp án: 1A 2A 3B 4A 5C 6B 7C 8C 9D 10D 11A 12C 13A 14D 15B 16D 17B 18C
+
+  {"c":"TT","s":"Đề 0001","q":"Đơn vị cảm ứng từ là","o":["Tesla","Vôn","Ampe","Vêbe"],"a":0},
+  {"c":"TT","s":"Đề 0001","q":"Đại lượng đặc trưng cho từ trường về khả năng tác dụng lực tại một điểm là","o":["cảm ứng từ","suất điện động","từ thông","cường độ điện trường"],"a":0},
+  {"c":"TT","s":"Đề 0001","q":"Lực từ tác dụng lên một đoạn dây dẫn mang dòng điện có biểu thức","o":["F=IBL.tanα","F=IBL.sinα","F=IB","F=IBL.cosα"],"a":1},
+  {"c":"TT","s":"Đề 0001","q":"Một khung dây có diện tích S đặt trong từ trường đều, cảm ứng từ B hợp với pháp tuyến mặt phẳng khung dây một góc α. Từ thông qua khung dây là","o":["Φ=BS.cosα","Φ=BS.sinα","Φ=BS","Φ=BS.tanα"],"a":0},
+  {"c":"TT","s":"Đề 0001","q":"Nguyên tắc tạo ra dòng điện xoay chiều dựa vào hiện tượng","o":["nam châm hút sắt","dòng điện tạo ra từ trường","cảm ứng điện từ","hiệu ứng Jun-Lenx"],"a":2},
+  {"c":"HN","s":"Đề 0001","q":"Hạt nhân nguyên tử được cấu tạo từ","o":["các nơtron","các nuclôn","các prôtôn","các electron"],"a":1},
+  {"c":"HN","s":"Đề 0001","q":"Một hạt nhân có kí hiệu ¹⁶₈O. Số nuclôn trong hạt nhân này là","o":["8","10","16","7"],"a":2},
+  {"c":"HN","s":"Đề 0001","q":"Các nguyên tử được gọi là đồng vị khi các hạt nhân của chúng có","o":["số nuclôn giống nhau nhưng số nơtron khác nhau","số nơtron giống nhau nhưng số proton khác nhau","số proton giống nhau nhưng số nơtron khác nhau","khối lượng giống nhau nhưng số proton khác nhau"],"a":2},
+  {"c":"HN","s":"Đề 0001","q":"Một hạt nhân bền vững khi có","o":["số nuclôn càng nhỏ","số nuclôn càng lớn","năng lượng liên kết càng lớn","năng lượng liên kết riêng càng lớn"],"a":3},
+  {"c":"HN","s":"Đề 0001","q":"Chọn câu sai về quy tắc an toàn đối với nhân viên làm việc liên quan đến phóng xạ?","o":["Giảm thời gian tiếp xúc với phóng xạ","Tăng khoảng cách từ cơ thể đến nguồn phóng xạ","Mặc đồ bảo hộ","Ăn uống trong phòng làm việc có chứa chất phóng xạ"],"a":3},
+  {"c":"TT","s":"Đề 0001","q":"Một dòng điện xoay chiều có biểu thức i=2√2·cos(100πt) mA. Cường độ dòng điện hiệu dụng có giá trị bao nhiêu?","o":["2 A","√2 A","2 mA","√2 mA"],"a":0},
+  {"c":"HN","s":"Đề 0001","q":"Phản ứng nào sau đây là phản ứng nhiệt hạch?","o":["²¹⁰₈₄Po → ²⁰⁶₈₂Pb + ⁴₂He","²³⁵₉₂U + n → ¹⁴¹₅₆Ba + ⁹²₃₆Kr + 3n","²₁H + ²₁H → ³₂He + ¹₀n","²²⁶₈₈Ra → ²²²₈₆Rn + ⁴₂He"],"a":2},
+  {"c":"HN","s":"Đề 0001","q":"Một chất phóng xạ giải phóng một loại hạt từ bên trong hạt nhân. Hạt đó có cấu trúc gồm hai proton và hai neutron. Tên gọi của quá trình này là gì?","o":["Phóng xạ alpha","Phóng xạ beta","Phóng xạ gamma","Phân hạch hạt nhân"],"a":0},
+  {"c":"TT","s":"Đề 0001","q":"Khi nói về sóng điện từ, phát biểu nào sau đây là sai?","o":["Sóng điện từ mang năng lượng","Sóng điện từ tuân theo các quy luật giao thoa, nhiễu xạ","Sóng điện từ là sóng ngang","Sóng điện từ không truyền được trong chân không"],"a":3},
+  {"c":"HN","s":"Đề 0001","q":"Một nhà khoa học sử dụng nguồn phóng xạ tia gamma để làm thí nghiệm. Hành động nào sau đây sẽ KHÔNG làm giảm lượng tia gamma đi tới nhà khoa học?","o":["Giữ khoảng cách giữa nguồn phóng xạ và nhà khoa học càng lớn càng tốt","Giữ nhiệt độ của nguồn phóng xạ càng thấp càng tốt","Giảm thiểu thời gian nhà khoa học sử dụng nguồn phóng xạ","Đặt một màn chắn bằng chì giữa nhà khoa học và nguồn phóng xạ"],"a":1},
+  {"c":"HN","s":"Đề 0001","q":"Hạt nhân X có 17 proton và 18 neutron. Kí hiệu nào sau đây là đúng cho hạt nhân X?","o":["¹⁷₁₈X","¹⁷₃₅X","¹⁸₁₇X","³⁵₁₇X"],"a":3},
+  {"c":"TT","s":"Đề 0001","q":"Suất điện động cảm ứng được tạo ra bởi một máy phát điện xoay chiều có biểu thức e=110cos(120πt+π/2) V. Tần số của dòng điện xoay chiều do máy phát ra là","o":["50 Hz","60 Hz","100 Hz","120 Hz"],"a":1},
+  {"c":"TT","s":"Đề 0001","q":"Hình nào sau đây biểu diễn không đúng vectơ lực từ tác dụng lên đoạn dây dẫn mang dòng điện đặt trong từ trường (B hướng sang phải, dòng điện hướng lên trên)?","o":["Hình 1","Hình 2","Hình 3","Hình 4"],"a":2},
+
 ];
 
 var TF = [
@@ -104,6 +127,34 @@ var TF = [
   {"c": "HN", "q": "Phản ứng: ²₁H + ²₁H → X + ¹₀n. Mỗi phản ứng tỏa ~4 MeV.", "stmts": [{"t": "a. Hạt X là hạt ⁴₂He.", "a": false}, {"t": "b. Hạt nhân X có 2 proton và 1 neutron.", "a": true}, {"t": "c. Số hạt nhân helium từ phản ứng khi tổng hợp được 100g là 2,008.10²⁵.", "a": false}, {"t": "d. Năng lượng tỏa ra khi tổng hợp 100g helium xấp xỉ 8,03.10²⁶ MeV.", "a": true}]},
   {"c": "HN", "q": "Chất phóng xạ ²¹⁰₈₄Po phóng tia α → X. T = 138 ngày.", "stmts": [{"t": "a. Hạt nhân X là hạt nhân Bismuth.", "a": false}, {"t": "b. Ban đầu 10g Po, sau 276 ngày còn lại 2,5g.", "a": true}, {"t": "c. Ban đầu 5g Po. Độ phóng xạ là 9,23.10¹⁴ Bq.", "a": false}, {"t": "d. Ban đầu 0,168g Po. Khối lượng hạt X (Pb) tạo thành sau 414 ngày là 0,1442g.", "a": true}]},
   {"c": "HN", "q": "Khi nói về lò phản ứng hạt nhân.", "stmts": [{"t": "a. Nhà máy điện hạt nhân không phát thải khí gây hiệu ứng nhà kính như CO₂.", "a": true}, {"t": "b. Nhà máy điện hạt nhân có thể hoạt động liên tục nhiều năm mà không cần bảo trì.", "a": false}, {"t": "c. Việc xử lý chất thải hạt nhân đòi hỏi công nghệ đơn giản và chi phí thấp.", "a": false}, {"t": "d. Vật liệu chứa chất thải hạt nhân cần độ bền rất cao để bảo quản trong thời gian dài.", "a": true}]},
+
+  // ===== ĐỀ 0001 – PHẦN II: TF =====
+  // Đáp án: C1: a)S b)S c)Đ d)S | C2: a)Đ b)Đ c)Đ d)S | C3: a)Đ b)S c)S d)Đ | C4: a)S b)S c)Đ d)Đ
+
+  {"c":"TT","q":"Đề 0001 – Một đoạn dây cáp thẳng dài 0,50 m mang dòng điện 2,0 A được đặt trong một từ trường đều có độ lớn cảm ứng từ là 0,5 T.","stmts":[
+    {"t":"a) Lực từ tác dụng lên đoạn dây cáp là lớn nhất khi nó định hướng song song với các đường sức từ.","a":false},
+    {"t":"b) Không có lực từ tác dụng lên đoạn dây cáp nếu nó định hướng vuông góc với các đường sức từ.","a":false},
+    {"t":"c) Khi đoạn dây cáp định hướng sao cho chiều dòng điện hợp một góc 30° với các đường sức từ thì lực từ tác dụng lên đoạn dây cáp có độ lớn 0,25 N.","a":true},
+    {"t":"d) Khi đoạn dây cáp quay sao cho góc hợp giữa chiều dòng điện và các đường sức từ tăng dần thì lực từ tác dụng lên nó có độ lớn giảm dần.","a":false}
+  ]},
+  {"c":"TT","q":"Đề 0001 – Điện áp đặt vào một đoạn mạch có biểu thức u=40√2·cos(100πt) V.","stmts":[
+    {"t":"a) Điện áp có giá trị cực đại là 40√2 V.","a":true},
+    {"t":"b) Điện áp hiệu dụng của đoạn mạch là 40 V.","a":true},
+    {"t":"c) Chu kì biến thiên điều hoà của điện áp là 0,02 s.","a":true},
+    {"t":"d) Tại thời điểm ban đầu (t=0), điện áp có giá trị bằng không.","a":false}
+  ]},
+  {"c":"HN","q":"Đề 0001 – Các nucleon liên kết với nhau bên trong hạt nhân nhờ lực hạt nhân.","stmts":[
+    {"t":"a) Lực hạt nhân chỉ tác dụng trong phạm vi bán kính hạt nhân, khoảng 10⁻¹⁵ m.","a":true},
+    {"t":"b) Lực hạt nhân vừa là lực hút, vừa là lực đẩy.","a":false},
+    {"t":"c) Lực hạt nhân có độ lớn cân bằng với lực hấp dẫn giữa các nucleon, nhờ đó duy trì cấu trúc hạt nhân.","a":false},
+    {"t":"d) Khi khoảng cách giữa nucleon lớn hơn bán kính hạt nhân thì lực hạt nhân giảm về bằng 0.","a":true}
+  ]},
+  {"c":"HN","q":"Đề 0001 – Khi nói về hiện tượng phóng xạ.","stmts":[
+    {"t":"a) Phóng xạ là hiện tượng nhân tạo.","a":false},
+    {"t":"b) Tia phóng xạ alpha có khả năng xuyên qua mạnh hơn tia gamma.","a":false},
+    {"t":"c) Thời gian cần thiết để một mẫu chất phóng xạ giảm còn 1/8 khối lượng ban đầu là t=3T, với T là chu kỳ bán rã.","a":true},
+    {"t":"d) Một mẫu phóng xạ ban đầu có 10²⁴ hạt nhân. Số hạt nhân còn lại sau 3 chu kỳ bán rã là 1,25×10²³ hạt.","a":true}
+  ]},
 ];
 
 var SA = [
@@ -125,4 +176,17 @@ var SA = [
   {"c": "HN", "q": "Chất phóng xạ, T. Sau t = 3T, tỉ số số hạt nhân bị phân rã/số hạt nhân còn lại bằng bao nhiêu?", "a": "7"},
   {"c": "HN", "q": "Nhà máy điện hạt nhân P = 182.10⁷ W, hiệu suất 30%, mỗi hạt ²³⁵U tỏa 200 MeV. Trong 365 ngày, năng lượng phân hạch cần là x.10¹⁷ J. Giá trị x? (3 chữ số có nghĩa)", "a": "x = 1,91"},
   {"c": "HN", "q": "Nguồn chiếu xạ ⁶⁰Co, T = 5,3 năm. Từ tháng 1/2022 đến tháng 6/2024, số chu kì bán rã đã qua là bao nhiêu? (2 chữ số có nghĩa)", "a": "0,46"},
+  // ===== ĐỀ 0001 – PHẦN III: SA =====
+  // Đáp án: 1→140, 2→20, 3→0, 4→0,08, 5→5, 6→2
+
+  {"c":"HN","q":"Đề 0001 – Trong phản ứng hạt nhân ²³⁵₉₂U + n → X + ⁹⁴₃₈Sr + 2n, hạt nhân X có bao nhiêu nucleon?","a":"140"},
+  {"c":"HN","q":"Đề 0001 – Có 22 neutron trong đồng vị ⁴²Ca. Số proton trong đồng vị ⁴⁰Ca bằng bao nhiêu?","a":"20"},
+  {"c":"TT","q":"Đề 0001 – Để lực điện từ tác dụng lên dây cực tiểu thì góc α giữa dây dẫn và các đường sức từ phải bằng bao nhiêu độ?","a":"0"},
+  {"c":"TT","q":"Đề 0001 – Một khung dây dẫn hình vuông cạnh 20 cm nằm trong từ trường đều độ lớn B=2 T sao cho các đường sức vuông góc với mặt khung dây. Từ thông qua khung dây bằng bao nhiêu Weber?","a":"0,08"},
+  {"c":"TT","q":"Đề 0001 – Một dòng điện xoay chiều có phương trình i=5cos(100πt+π/2) A. Giá trị cực đại của dòng điện trong mạch là bao nhiêu Ampe?","a":"5"},
+  {"c":"HN","q":"Đề 0001 – Ban đầu có N₀ hạt nhân của một chất phóng xạ. Sau 4 giờ, có 75% số hạt nhân N₀ bị phân rã. Chu kỳ bán rã của chất đó là bao nhiêu giờ?","a":"2"},
 ];
+
+
+
+
