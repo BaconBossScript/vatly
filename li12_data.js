@@ -88,7 +88,6 @@ var MC = [
   {"c": "HN", "s": "Chủ đề 3: Phóng xạ", "q": "Chất phóng xạ Po, T = 138 ngày, ban đầu 100g. Sau bao lâu lượng Po chỉ còn 1g?", "o": ["916,85 ngày", "834,45 ngày", "653,28 ngày", "548,69 ngày"], "a": 0},
   {"c": "HN", "s": "Chủ đề 3: Phóng xạ", "q": "Một đồng vị phóng xạ có chu kì bán rã T. Cứ sau bao lâu thì số hạt nhân bị phân rã bằng ba lần số hạt nhân còn lại?", "o": ["0,5T", "3T", "2T", "T"], "a": 2},
   {"c": "HN", "s": "Chủ đề 3: Phóng xạ", "q": "Po phân rã α thành Pb. T_Po = 138 ngày. Tại t₁: N_Po/N_Pb = 1/3. Tại t₂ = t₁ + 276 ngày, tỉ số N_Po/N_Pb bằng", "o": ["1/15", "2/15", "1/25", "2/25"], "a": 0},
-
   // ===== ĐỀ 0001 – PHẦN I: MC =====
   // Đáp án: 1A 2A 3B 4A 5C 6B 7C 8C 9D 10D 11A 12C 13A 14D 15B 16D 17B 18C
 
@@ -110,6 +109,182 @@ var MC = [
   {"c":"HN","s":"Đề 0001","q":"Hạt nhân X có 17 proton và 18 neutron. Kí hiệu nào sau đây là đúng cho hạt nhân X?","o":["¹⁷₁₈X","¹⁷₃₅X","¹⁸₁₇X","³⁵₁₇X"],"a":3},
   {"c":"TT","s":"Đề 0001","q":"Suất điện động cảm ứng được tạo ra bởi một máy phát điện xoay chiều có biểu thức e=110cos(120πt+π/2) V. Tần số của dòng điện xoay chiều do máy phát ra là","o":["50 Hz","60 Hz","100 Hz","120 Hz"],"a":1},
   {"c":"TT","s":"Đề 0001","q":"Hình nào sau đây biểu diễn không đúng vectơ lực từ tác dụng lên đoạn dây dẫn mang dòng điện đặt trong từ trường (B hướng sang phải, dòng điện hướng lên trên)?","o":["Hình 1","Hình 2","Hình 3","Hình 4"],"a":2},
+  // ===== ĐỀ 0002 – PHẦN I: MC =====
+  // Đáp án: 1B 2A 3A 4B 5C 6C 7A 8C 9D 10B 11C 12B 13B 14C 15C 16D 17A 18B
+
+  {"c":"HN","s":"Đề 0002","q":"Hạt nhân ⁶⁰₂₇Co có cấu tạo gồm","o":["27 prôtôn và 60 nơtron","27 prôtôn và 33 nơtron","60 prôtôn và 33 nơtron","33 prôtôn và 27 nơtron"],"a":1},
+  {"c":"HN","s":"Đề 0002","q":"Phản ứng nhiệt hạch là sự","o":["kết hợp hai hạt nhân rất nhẹ thành hạt nhân nặng hơn trong điều kiện nhiệt độ rất cao","kết hợp hai hạt nhân có số khối trung bình thành một hạt nhân rất nặng ở nhiệt độ rất cao","phân chia một hạt nhân nhẹ thành hai hạt nhân nhẹ hơn kèm theo sự toả nhiệt","phân chia một hạt nhân rất nặng thành các hạt nhân nhẹ hơn"],"a":0},
+  {"c":"HN","s":"Đề 0002","q":"Phát biểu nào sau đây là đúng khi nói về hiện tượng phóng xạ?","o":["Các tia phóng xạ có thể ion hóa môi trường và mất dần năng lượng","Chu kì bán rã của một chất phóng xạ sẽ thay đổi nếu ta tăng nhiệt độ của nguồn phóng xạ","Độ phóng xạ của một nguồn phóng xạ tăng theo thời gian","Chất phóng xạ có hằng số phóng xạ càng nhỏ thì phân rã càng nhanh"],"a":0},
+  {"c":"HN","s":"Đề 0002","q":"Cho phản ứng ²₁D + ³₁T → ⁴₂He + n + 17,5 MeV. Năng lượng toả ra khi tổng hợp được 1,00 mol khí heli xấp xỉ bằng","o":["4,21×10¹¹ J","1,69×10¹² J","5,03×10¹¹ J","4,24×10¹¹ J"],"a":1},
+  {"c":"HN","s":"Đề 0002","q":"Biết khối lượng của các hạt proton, neutron và hạt nhân ³¹₁₅P lần lượt là 1,0073 u; 1,0087 u; 30,9655 u. Năng lượng liên kết riêng của hạt nhân ³¹₁₅P là","o":["0,2749 MeV/nucleon","263,8 MeV/nucleon","8,510 MeV/nucleon","17,07 MeV/nucleon"],"a":2},
+  {"c":"HN","s":"Đề 0002","q":"Cho phản ứng phân hạch: n + ²³⁹₉₄Pu → ¹³⁴₅₄Xe + ¹⁰³₄₀Zr + X·n. Giá trị của X là","o":["1","2","3","4"],"a":2},
+  {"c":"HN","s":"Đề 0002","q":"Tia nào sau đây có cùng bản chất với tia tử ngoại?","o":["Tia γ","Tia α","Tia β⁺","Tia β⁻"],"a":0},
+  {"c":"HN","s":"Đề 0002","q":"Số hạt neutron có trong 1,00 mol vàng ¹⁹⁷₇₉Au là","o":["1,19×10²⁶ hạt","4,76×10²⁵ hạt","7,10×10²⁵ hạt","1,66×10²⁶ hạt"],"a":2},
+  {"c":"HN","s":"Đề 0002","q":"Phân tích một tượng gỗ cổ, thấy rằng độ phóng xạ β⁻ của nó bằng 0,75 lần độ phóng xạ của một khúc gỗ mới chặt cùng loại cùng khối lượng. Đồng vị ¹⁴C có chu kì bán rã là 5730 năm. Tuổi của tượng gỗ là","o":["3550 năm","1378 năm","1315 năm","2378 năm"],"a":3},
+  {"c":"HN","s":"Đề 0002","q":"Đồ thị biểu diễn khối lượng của mẫu chất phóng xạ X thay đổi theo thời gian (từ đồ thị: T=50 năm). Hằng số phóng xạ của chất X là","o":["0,028 s⁻¹","8,8×10⁻¹⁰ s⁻¹","25 năm","50 năm"],"a":1},
+  {"c":"TT","s":"Đề 0002","q":"Phát biểu nào sau đây là sai?","o":["Tương tác giữa dòng điện với dòng điện là tương tác từ","Cảm ứng từ đặc trưng cho từ trường tại một điểm trong từ trường về mặt tác dụng lực","Xung quanh một điện tích đứng yên có điện trường và từ trường","Hiện tượng xuất hiện suất điện động cảm ứng là hiện tượng cảm ứng điện từ"],"a":2},
+  {"c":"TT","s":"Đề 0002","q":"Cảm ứng từ tại một điểm trong từ trường có hướng","o":["vuông góc với đường sức từ","trùng với hướng của đường sức từ","trùng với hướng của lực từ","ngược với hướng của lực từ"],"a":1},
+  {"c":"TT","s":"Đề 0002","q":"Cách nào sau đây không tạo ra suất điện động cảm ứng?","o":["Di chuyển một đoạn dây dẫn giữa các cực của nam châm","Giữ cố định một đoạn dây dẫn giữa hai cực của nam châm","Di chuyển một thanh nam châm ra khỏi một ống dây dẫn","Làm quay một khung dây dẫn trong từ trường"],"a":1},
+  {"c":"TT","s":"Đề 0002","q":"Rotato của máy phát điện xoay chiều một pha là một khung dây phẳng quay quanh trục nằm trong mặt phẳng của khung trong từ trường của stato, suất điện động cảm ứng đổi chiều một lần trong mấy vòng quay?","o":["Một vòng quay","Hai vòng quay","Một nửa vòng quay","Một phần tư vòng quay"],"a":2},
+  {"c":"TT","s":"Đề 0002","q":"Ở một đèn sợi đốt ghi 220 V – 110 W. Đèn sáng bình thường ở mạng điện xoay chiều có điện áp u=220√2·cos(100πt) V. Cường độ dòng điện chạy qua đèn là","o":["i=10cos(100πt)","i=5cos(100πt)","i=0,5√2·cos(100πt)","i=10√2·cos(100πt)"],"a":2},
+  {"c":"TT","s":"Đề 0002","q":"Lực từ tác dụng lên một đoạn dây dẫn có dòng điện chạy qua và được đặt cùng phương với cảm ứng từ","o":["cùng hướng với cảm ứng từ","ngược hướng với cảm ứng từ","vuông góc với cảm ứng từ","bằng 0"],"a":3},
+  {"c":"TT","s":"Đề 0002","q":"Một đoạn dây dẫn điện thẳng dài 33 cm chuyển động vuông góc với chính nó và vuông góc với từ trường B=21 mT. Suất điện động cảm ứng trong đoạn dây là 4,5 mV. Đoạn dây chuyển động với tốc độ là","o":["0,65 m/s","14,1 m/s","0,071 m/s","1,5 m/s"],"a":0},
+  {"c":"TT","s":"Đề 0002","q":"Một học sinh đo được giá trị của điện áp xoay chiều ở mạng điện gia đình là 220 V. Giá trị cực đại của điện áp này là","o":["440 V","311 V","156 V","110 V"],"a":1},
+// ===== ĐỀ 0003 – PHẦN I: MC =====
+// Đáp án: 1B 2B 3A 4C 5A 6C 7D 8B 9D 10A 11C 12D 13D 14A 15A 16B 17B 18D
+
+{"c":"TT","s":"Đề 0003","q":"Các đường sức từ là các đường cong vẽ trong không gian có từ trường sao cho","o":["pháp tuyến tại mọi điểm trùng với hướng của từ trường tại điểm đó","tiếp tuyến tại mọi điểm trùng với hướng của từ trường tại điểm đó","pháp tuyến tại mỗi điểm tạo với hướng của từ trường một góc không đổi","tiếp tuyến tại mọi điểm tạo với hướng của từ trường một góc không đổi"],"a":1},
+{"c":"TT","s":"Đề 0003","q":"Phát biểu nào dưới đây là sai? Lực từ là lực tương tác","o":["giữa hai nam châm","giữa hai điện tích đứng yên","giữa hai dòng điện","giữa một nam châm và một dòng điện"],"a":1},
+{"c":"TT","s":"Đề 0003","q":"Hiện nay, hệ thống điện lưới quốc gia ở Việt Nam thường dùng dòng điện xoay chiều có tần số là","o":["50 Hz","100 Hz","120 Hz","60 Hz"],"a":0},
+{"c":"TT","s":"Đề 0003","q":"Cảm ứng từ sinh bởi dòng điện chạy trong dây dẫn thẳng dài KHÔNG có đặc điểm nào sau đây?","o":["Tỉ lệ nghịch với khoảng cách từ điểm đang xét đến dây dẫn","Tỉ lệ thuận với cường độ dòng điện","Tỉ lệ thuận với chiều dài dây dẫn","Vuông góc với dây dẫn"],"a":2},
+{"c":"TT","s":"Đề 0003","q":"Một dòng điện xoay chiều có biểu thức i=2cos(100πt+π/2) A. Cường độ dòng điện bằng 0 A vào thời điểm nào dưới đây?","o":["t=0","t=0,05s","t=0,015s","t=0,005s"],"a":0},
+{"c":"HN","s":"Đề 0003","q":"Trong phản ứng hạt nhân có sự bảo toàn","o":["số proton","số neutron","số nucleon","khối lượng"],"a":2},
+{"c":"HN","s":"Đề 0003","q":"Đồng vị là các nguyên tử mà hạt nhân của chúng có","o":["khối lượng bằng nhau","số neutron bằng nhau, số proton khác nhau","số nucleon bằng nhau","số proton bằng nhau, số neutron khác nhau"],"a":3},
+{"c":"HN","s":"Đề 0003","q":"Hạt nhân nào có độ hụt khối càng lớn thì","o":["càng dễ phá vỡ","năng lượng liên kết lớn","năng lượng liên kết nhỏ","càng bền vững"],"a":1},
+{"c":"HN","s":"Đề 0003","q":"Nguyên tử ²³₁₁Na gồm","o":["11 proton và 23 neutron","12 proton và 11 neutron","12 proton và 23 neutron","11 proton và 12 neutron"],"a":3},
+{"c":"HN","s":"Đề 0003","q":"Xác định hạt X trong phương trình: ¹⁹₉F + ¹₁H → ¹⁶₈O + X","o":["⁴₂He","³₂He","³₁H","²₁H"],"a":0},
+{"c":"TT","s":"Đề 0003","q":"Dùng định luật Len-xơ xác định chiều dòng điện cảm ứng trong khung dây dẫn khi nam châm đưa lại gần (cực N hướng vào đầu khung dây ABDC từ phía phải)","o":["Chiều dòng điện cảm ứng ngược chiều vector cảm ứng từ","Chiều dòng điện cảm ứng ngược chiều kim đồng hồ","Chiều dòng điện cảm ứng cùng chiều kim đồng hồ","Chiều dòng điện cảm ứng cùng chiều vector cảm ứng từ"],"a":2},
+{"c":"HN","s":"Đề 0003","q":"Cho khối lượng của hạt prôton; nơtron và hạt nhân đơteri ²₁D lần lượt là 1,0073u; 1,0087u và 2,0136u. Biết 1u=931,5 MeV/c². Năng lượng liên kết riêng của hạt nhân đơteri ²₁D là","o":["4,48 MeV/nucleon","2,24 MeV/nucleon","3,06 MeV/nucleon","1,12 MeV/nucleon"],"a":3},
+{"c":"HN","s":"Đề 0003","q":"Hạt nhân càng bền vững khi có","o":["số nucleon càng nhỏ","số nucleon càng lớn","năng lượng liên kết càng lớn","năng lượng liên kết riêng càng lớn"],"a":3},
+{"c":"TT","s":"Đề 0003","q":"Một dòng điện xoay chiều hình sin có cường độ hiệu dụng là √2 A thì cường độ dòng điện có giá trị cực đại bằng","o":["2A","A","4A","0,25A"],"a":0},
+{"c":"TT","s":"Đề 0003","q":"Một đoạn dây dẫn dài 1,5 m mang dòng điện 10 A, đặt vuông góc trong một từ trường đều có độ lớn cảm ứng từ 1,2 T. Nó chịu một lực từ tác dụng là","o":["18 N","1,8 N","1800 N","0 N"],"a":0},
+{"c":"HN","s":"Đề 0003","q":"Hạt nhân nào sau đây không thể phân hạch?","o":["²³⁹₉₄Pb","¹²₆C","²³⁹₉₂U","²³⁸₉₂U"],"a":1},
+{"c":"HN","s":"Đề 0003","q":"Khối lượng của hạt nhân ¹⁰₄Be là 10,0113u, mn=1,0086u, mp=1,0072u. Độ hụt khối của hạt nhân ¹⁰₄Be là","o":["0,9110u","0,0691u","0,0561u","0,0811u"],"a":1},
+{"c":"HN","s":"Đề 0003","q":"Chu kỳ bán rã của U238 là 4,5×10⁹ năm. Số nguyên tử bị phân rã sau 10⁶ năm từ 1 gam U238 ban đầu là bao nhiêu? Biết NA=6,02×10²³ hạt/mol.","o":["2,529×10²¹","2,529×10¹⁸","3,896×10¹⁴","3,896×10¹⁷"],"a":3},
+// ===== ĐỀ 0004 – PHẦN I: MC =====
+// Đáp án: 1D 2A 3A 4B 5C 6C 7A 8C 9D 10B 11C 12B 13B 14C 15C 16D 17A 18B
+
+{"c":"HN","s":"Đề 0004","q":"Hạt nhân chromium ⁵²₂₄Cr có","o":["24 electron","52 proton","76 nucleon","28 neutron"],"a":3},
+
+// ===== ĐỀ 0005 – PHẦN I: MC =====
+// Đáp án: 1C 2C 3B 4B 5D 6B 7B 8B 9C 10D 11A 12B 13A 14C 15D 16B 17C 18D
+
+{"c":"TT","s":"Đề 0005","q":"Từ trường là dạng vật chất tồn tại trong không gian và tác dụng","o":["lực lên các vật đặt trong nó","lực điện lên điện tích dương đặt trong nó","lực từ lên nam châm và dòng điện đặt trong nó","lực điện lên điện tích âm đặt trong nó"],"a":2},
+{"c":"TT","s":"Đề 0005","q":"Từ thông qua diện tích S không phụ thuộc yếu tố nào sau đây?","o":["Độ lớn cảm ứng từ","Diện tích đang xét","Nhiệt độ môi trường","Góc tạo bởi pháp tuyến và vectơ cảm ứng từ"],"a":2},
+{"c":"HN","s":"Đề 0005","q":"Hạt nhân ²³₁₁Na có","o":["23 prôtôn và 11 nơtron","11 prôtôn và 12 nơtron","2 prôtôn và 11 nơtron","11 prôtôn và 23 nơtron"],"a":1},
+{"c":"HN","s":"Đề 0005","q":"Hạt nhân ²³⁴₉₂U phóng xạ α với phương trình là","o":["²³⁴₉₂U → α + ²³⁴₉₀Th","²³⁴₉₂U → ⁴₂He + ²³⁰₉₀Th","²³⁴₉₂U → ²₄He + ²³²₈₈U","²³⁴₉₂U → α + ²³⁰₉₀U"],"a":1},
+{"c":"HN","s":"Đề 0005","q":"Hạt nhân càng bền vững khi có","o":["Số nuclôn càng nhỏ","Số nuclôn càng lớn","Năng lượng liên kết càng lớn","Năng lượng liên kết riêng càng lớn"],"a":3},
+{"c":"HN","s":"Đề 0005","q":"Phản ứng phân hạch","o":["chỉ xảy ra ở nhiệt độ rất cao cỡ hàng chục triệu độ","là sự vỡ của một hạt nhân nặng thành hai hạt nhân nhẹ hơn","là phản ứng trong đó hai hạt nhân nhẹ tổng hợp lại thành hạt nhân nặng hơn","là phản ứng hạt nhân thu năng lượng"],"a":1},
+{"c":"HN","s":"Đề 0005","q":"Chu kì bán rã của một chất phóng xạ là khoảng thời gian để","o":["quá trình phóng xạ lặp lại như lúc đầu","một nửa số nguyên tử chất ấy biến đổi thành chất khác","khối lượng ban đầu của chất ấy giảm đi một phần tư","hằng số phóng xạ của chất ấy giảm đi còn một nửa"],"a":1},
+{"c":"TT","s":"Đề 0005","q":"Ống dây điện bị hút về phía thanh nam châm. Hãy chỉ rõ cực của thanh nam châm (đầu P gần ống dây, dòng điện trong ống dây chạy theo chiều tạo ra cực Nam ở đầu gần P)","o":["đầu P là cực dương, đầu Q là cực âm","đầu P là cực nam, đầu Q là cực bắc","đầu P là cực bắc, đầu Q là cực nam","đầu P là cực âm, đầu Q là cực dương"],"a":1},
+{"c":"TT","s":"Đề 0005","q":"Một đoạn dây dẫn đặt vuông góc với các đường sức từ của một từ trường đều. Khi cường độ dòng điện chạy trong dây dẫn tăng lên 4 lần thì lực từ tác dụng lên đoạn dây này","o":["giảm 4 lần","tăng 2 lần","tăng 4 lần","giảm 2 lần"],"a":2},
+{"c":"TT","s":"Đề 0005","q":"Một sóng điện từ đang truyền theo phương thẳng đứng hướng lên. Tại điểm M, vecto cảm ứng từ đang có độ lớn cực đại và hướng về phía Bắc. Khi đó vecto cường độ điện trường có","o":["Độ lớn bằng không","Độ lớn cực đại và hướng về phía Bắc","Độ lớn cực đại và hướng về phía Tây","Độ lớn cực đại và hướng về phía Đông"],"a":3},
+{"c":"HN","s":"Đề 0005","q":"Các hạt nhân đồng vị ¹₁H; ²₁H; ³₁H là những hạt nhân có cùng","o":["số prôtôn","số nơtron","số nuclôn","khối lượng nguyên tử"],"a":0},
+{"c":"HN","s":"Đề 0005","q":"So với hạt nhân ²⁹₁₄Si, hạt nhân ⁴⁰₂₀Ca có nhiều hơn","o":["11 nơtrôn và 6 prôtôn","5 nơtrôn và 6 prôtôn","6 nơtrôn và 5 prôtôn","5 nơtrôn và 12 prôtôn"],"a":1},
+{"c":"HN","s":"Đề 0005","q":"Tia phóng xạ nào sau đây có khả năng đâm xuyên mạnh nhất?","o":["Tia γ","Tia α","Tia β⁺","Tia β⁻"],"a":0},
+{"c":"HN","s":"Đề 0005","q":"Phát biểu nào sau đây là sai khi nói về tia α?","o":["Tia α thực chất là các hạt nhân nguyên tử hêli He","Tia α bị lệch trong điện trường và trong từ trường","Tia α phóng ra từ hạt nhân với vận tốc bằng vận tốc ánh sáng","Khi đi trong không khí tia α làm ion hóa không khí và mất dần năng lượng"],"a":2},
+{"c":"TT","s":"Đề 0005","q":"Đoạn dây có chiều dài l=10 cm có mang dòng điện I=1 A được đặt trong từ trường đều có B=0,1 T, α=30°. Khi đó lực F tác dụng lên dây dẫn là","o":["0,01 N","1 N","0,5 N","0,005 N"],"a":3},
+{"c":"TT","s":"Đề 0005","q":"Một vòng dây dẫn kín, phẳng được đặt trong từ trường đều. Trong khoảng thời gian 0,04 s, từ thông qua vòng dây giảm đều từ giá trị 6×10⁻³ Wb về 0 thì suất điện động cảm ứng xuất hiện trong vòng dây có độ lớn là","o":["0,12 V","0,15 V","0,30 V","0,24 V"],"a":1},
+{"c":"HN","s":"Đề 0005","q":"Biết khối lượng của prôtôn; nơtron; hạt nhân ¹⁶₈O lần lượt là 1,0073 u; 1,0087 u; 15,9904 u và 1u=931,5 MeV/c². Năng lượng liên kết của hạt nhân ¹⁶₈O xấp xỉ bằng","o":["14,25 MeV","18,76 MeV","128,17 MeV","190,81 MeV"],"a":2},
+{"c":"HN","s":"Đề 0005","q":"Một mẫu phóng xạ Randon (²²²₈₆Rn) chứa 10¹⁰ nguyên tử. Chu kỳ bán rã là 3,8 ngày. Số nguyên tử Rn bị phân rã trong 1 ngày là","o":["0,25×10¹⁰","0,25×10⁸","0,1667×10⁸","0,1667×10¹⁰"],"a":3},
+// ===== ĐỀ 0006 – PHẦN I: MC =====
+// Đáp án: 1A 2A 3C 4B 5C 6D 7B 8C 9D 10A 11B 12B 13D 14B 15C 16B 17C 18D
+
+{"c":"HN","s":"Đề 0006","q":"Một hạt nhân có năng lượng liên kết là ΔE, tổng số nucleon là A. Năng lượng liên kết riêng của hạt nhân là ε, công thức tính ε nào sau đây là đúng?","o":["ε=A/ΔE","ε=ΔE/A","ε=A·ΔE","ε=ΔE/A²"],"a":0},
+{"c":"HN","s":"Đề 0006","q":"Hạt nhân nguyên tử X có 3 proton và 4 neutron là","o":["⁷₃X","⁴₃X","⁷₄X","³₇X"],"a":0},
+{"c":"HN","s":"Đề 0006","q":"Những tia nào không bị lệch trong điện trường và từ trường?","o":["tia α và tia β","tia γ và tia β","tia γ và tia X","tia α, tia γ và tia X"],"a":2},
+{"c":"HN","s":"Đề 0006","q":"Hạt nhân của các đồng vị có gì giống nhau và khác nhau?","o":["Số neutron giống nhau nhưng số nucleon khác nhau","Số proton giống nhau nhưng số neutron khác nhau","Số nucleon giống nhau nhưng số proton khác nhau","Số neutron và số proton đều giống nhau"],"a":1},
+{"c":"TT","s":"Đề 0006","q":"Độ lớn của lực tương tác giữa hai điện tích điểm trong môi trường không khí tỷ lệ với","o":["tỉ lệ thuận với bình phương khoảng cách giữa hai điện tích","ti lệ nghịch với khoảng cách giữa hai điện tích","tỉ lệ nghịch với bình phương khoảng cách giữa hai điện tích","tỉ lệ thuận với khoảng cách giữa hai điện tích"],"a":2},
+{"c":"TT","s":"Đề 0006","q":"Một đoạn dây dẫn thẳng dài 128 cm được đặt trong một từ trường đều có cảm ứng từ 0,83 T. Cho dòng điện có cường độ 18 A chạy qua đoạn dây dẫn. Lực từ cực đại tác dụng lên đoạn dây là bao nhiêu?","o":["1,9 N","21 N","91 N","19 N"],"a":3},
+{"c":"TT","s":"Đề 0006","q":"Một mạch kín phẳng đặt trong một từ trường sao cho vectơ cảm ứng từ B hợp với vectơ pháp tuyến n của mặt phẳng chứa mạch một góc α. Biết mặt phẳng có diện tích S. Từ thông Φ qua mặt phẳng được xác định bởi biểu thức","o":["Φ=BS·sinα","Φ=BS·cosα","Φ=BS·cotα","Φ=BS·tanα"],"a":1},
+{"c":"TT","s":"Đề 0006","q":"Nguyên tắc hoạt động của sạc không dây dựa trên ứng dụng của hiện tượng nào?","o":["hiện tượng từ hoá của cuộn dây trong điện thoại","sóng điện từ","cảm ứng điện từ","tác dụng từ của dòng điện một chiều"],"a":2},
+{"c":"HN","s":"Đề 0006","q":"Khi sử dụng hạt proton có động năng Kp để bắn vào hạt nhân ⁷₃Li đứng yên, sau phản ứng thu được hai hạt giống nhau với cùng động năng 9,5 MeV. Biết năng lượng toả ra từ phản ứng là 17,4 MeV. Giá trị của Kp là","o":["36,4 MeV","26,9 MeV","7,9 MeV","1,6 MeV"],"a":3},
+{"c":"TT","s":"Đề 0006","q":"Cơ chế hoạt động của máy biến áp dựa vào hiện tượng nào?","o":["cảm ứng điện từ","từ hóa","nhiễu xạ sóng điện từ","giao thoa sóng điện từ"],"a":0},
+{"c":"TT","s":"Đề 0006","q":"Đơn vị của từ thông là","o":["Tesla (T)","Weber (Wb)","Ampe (A)","Volt (V)"],"a":1},
+{"c":"TT","s":"Đề 0006","q":"Khi thanh nam châm dịch chuyển lại gần ống dây (cực N hướng vào đầu 1 của ống dây), nhìn từ phía thanh nam châm vào đầu ống dây, phát biểu nào sau đây là đúng?","o":["Dòng điện chạy theo chiều kim đồng hồ, đầu 1 là cực bắc và hút cực bắc của thanh nam châm","Dòng điện chạy ngược chiều kim đồng hồ, đầu 1 là cực bắc và đẩy cực bắc của thanh nam châm","Dòng điện chạy ngược chiều kim đồng hồ, đầu 1 là cực nam và đẩy cực nam của thanh nam châm","Dòng điện chạy theo chiều kim đồng hồ, đầu 1 là cực nam và hút cực bắc của thanh nam châm"],"a":1},
+{"c":"TT","s":"Đề 0006","q":"Điện áp tức thời giữa hai đầu đoạn mạch điện xoay chiều là u=311cos(100πt) V. Giá trị hiệu dụng của điện áp đó là","o":["311 V","440 V","156 V","220 V"],"a":3},
+{"c":"TT","s":"Đề 0006","q":"Một chiếc máy bay lên thẳng có cánh dài 3,00 m (tính từ trục quay) và quay với tốc độ 2,00 vòng/s, trong mặt phẳng nằm ngang. Thành phần thẳng đứng của từ trường Trái Đất là 50,0 μT. Trong 1 giây, cánh máy bay quay tạo ra suất điện động cảm ứng là","o":["3,11 mV","2,83 mV","5,6 mV","4,4 mV"],"a":1},
+{"c":"TT","s":"Đề 0006","q":"Đoạn dây dẫn MN dài 0,20 m đang bị kéo về bên phải với tốc độ 2,0 m/s. Biết B=1,2 T, điện trở của MN là 100 Ω, bỏ qua điện trở các phần còn lại. Lực cần thiết để kéo thanh ở tốc độ không đổi này là","o":["3,1 N","2,3 N","1,2 N","4,4 N"],"a":2},
+{"c":"HN","s":"Đề 0006","q":"Biết khối lượng của các hạt proton, neutron và hạt nhân ¹⁸₈O lần lượt là 1,0073 u; 1,0087 u; 17,9948 u. Độ hụt khối của hạt nhân ¹⁸₈O là","o":["0,1376 u","0,1506 u","0,1478 u","8,2202 u"],"a":1},
+{"c":"HN","s":"Đề 0006","q":"Chất phóng xạ ²²⁵₈₈Ra phát ra tia β⁻ và biến đổi thành hạt nhân khác. Hạt nhân sản phẩm được tạo thành có số hạt proton là","o":["88 proton","87 proton","89 proton","225 proton"],"a":2},
+{"c":"HN","s":"Đề 0006","q":"Biết khối lượng của các hạt proton, neutron và hạt nhân ¹⁹₉F lần lượt là 1,0073 u; 1,0087 u; 18,9934 u. Độ hụt khối của hạt nhân ¹⁹₉F là","o":["0,1529 u","0,1506 u","0,1478 u","0,1593 u"],"a":3},
+// ===== ĐỀ 0007 – PHẦN I: MC =====
+// Đáp án: 1C 2B 3C 4A 5B 6A 7A 8A 9C 10B 11D 12D 13C 14B 15D 16C 17A 18A
+
+{"c":"TT","s":"Đề 0007","q":"Công thức tính lực từ tác dụng lên đoạn dây có dòng điện là","o":["F=BIl·cosα","F=BI·sinα","F=BIl·sinα","F=Bl·sinα"],"a":2},
+{"c":"TT","s":"Đề 0007","q":"Từ thông qua diện tích S có α=(B,n), được xác định theo công thức","o":["φ=BS·tanα","φ=BS·cosα","φ=BSc·tanα","φ=BS·sinα"],"a":1},
+{"c":"TT","s":"Đề 0007","q":"Trong các đại lượng đặc trưng cho dòng điện xoay chiều sau đây, đại lượng nào không có dùng giá trị hiệu dụng?","o":["Hiệu điện thế","Suất điện động","Tần số","Cường độ dòng điện"],"a":2},
+{"c":"TT","s":"Đề 0007","q":"Phát biểu nào sau đây là sai khi nói về sóng điện từ?","o":["Sóng điện từ là điện từ trường lan truyền trong không gian","Sóng điện từ không lan truyền trong chân không","Sóng điện từ là sóng ngang","Tại một điểm trong không gian truyền sóng điện từ, véc tơ E và véc tơ B luôn đồng pha nhau"],"a":1},
+{"c":"TT","s":"Đề 0007","q":"Từ trường là một dạng vật chất tồn tại xung quanh","o":["các hạt mang điện chuyển động","các hạt mang điện đứng yên","các hạt không mang điện chuyển động","các hạt không mang điện đứng yên"],"a":0},
+{"c":"TT","s":"Đề 0007","q":"Lực nào sau đây không phải lực từ?","o":["Lực Trái Đất tác dụng lên vật nặng","Lực Trái đất tác dụng lên kim nam châm ở trạng thái tự do làm nó định hướng theo phương bắc nam","Lực nam châm tác dụng lên dây dẫn bằng nhôm mang dòng điện","Lực hai dây dẫn mang dòng điện tác dụng lên nhau"],"a":0},
+{"c":"TT","s":"Đề 0007","q":"Một dây dẫn dài 50 cm được đặt vuông góc với một từ trường đều. Cường độ dòng điện trong dây là 10,0 A, lực do từ trường tác dụng lên dây là 3,0 N. Độ lớn cảm ứng từ của từ trường là","o":["0,60 T","1,5 T","1,8×10⁻³ T","6,7×10⁻³ T"],"a":0},
+{"c":"TT","s":"Đề 0007","q":"Một khung dây hình vuông cạnh 5 cm đặt trong từ trường đều có cảm ứng từ B=8×10⁻⁴ T. Từ thông qua hình vuông đó bằng 10⁻⁶ Wb. Tính góc hợp giữa vectơ cảm ứng từ và vectơ pháp tuyến của hình vuông đó.","o":["α=0°","α=30°","α=60°","α=90°"],"a":2},
+{"c":"TT","s":"Đề 0007","q":"Một học sinh đo được giá trị của điện áp xoay chiều ở mạng điện gia đình là 220 V. Giá trị cực đại của điện áp này là","o":["440 V","311 V","156 V","110 V"],"a":1},
+{"c":"TT","s":"Đề 0007","q":"Sóng điện từ có tần số 10 MHz truyền với tốc độ 3×10⁸ m/s có bước sóng là","o":["3 m","6 m","60 m","30 m"],"a":3},
+{"c":"HN","s":"Đề 0007","q":"Hạt nhân strontium ⁸⁸₃₈Sr có năng lượng liên kết là 769,2 MeV. Độ hụt khối của hạt nhân đó là","o":["8,741 u","19,78 u","0,7052 u","0,8258 u"],"a":3},
+{"c":"TT","s":"Đề 0007","q":"Một học sinh dùng một la bàn nhỏ đặt phía trên một đoạn dây dẫn thẳng dài mang dòng điện để tìm hiểu về chiều đường sức. Hình ảnh nào thể hiện hướng chính xác của kim la bàn (dòng điện hướng sang phải, la bàn đặt trên dây)?","o":["Hình A","Hình B","Hình C","Hình D"],"a":1},
+{"c":"TT","s":"Đề 0007","q":"Phát biểu nào sau đây là đúng? Trường điện từ xuất hiện xung quanh","o":["một điện tích đứng yên","một dòng điện không đổi","một ống dây điện","vị trí có tia lửa điện"],"a":3},
+{"c":"HN","s":"Đề 0007","q":"Hạt nhân ³¹₁₅P và hạt nhân ³³₁₇Cl có cùng","o":["khối lượng","điện tích","số neutron","số khối"],"a":2},
+{"c":"TT","s":"Đề 0007","q":"Hình bên mô tả thí nghiệm về hiện tượng cảm ứng điện từ. Khi tăng tốc độ di chuyển thanh nam châm, dòng điện trong ống dây","o":["có độ lớn tăng lên","có độ lớn giảm đi","có độ lớn không đổi","đảo ngược chiều"],"a":0},
+{"c":"HN","s":"Đề 0007","q":"Tia phóng xạ nào sau đây có thể đâm xuyên mạnh nhất?","o":["Tia γ","Tia α","Tia β⁺","Tia β⁻"],"a":0},
+// ===== ĐỀ 0008 – PHẦN I: MC =====
+// Đáp án: 1A 2C 3D 4B 5C 6A 7C 8A 9A 10B 11C 12C 13C 14C 15C 16C 17C 18C
+
+{"c":"TT","s":"Đề 0008","q":"Sóng nào sau đây không phải là sự lan truyền của điện từ trường trong không gian?","o":["Sóng âm","Sóng hồng ngoại","Sóng ánh sáng","Sóng Wi-Fi"],"a":0},
+{"c":"TT","s":"Đề 0008","q":"Một mạch kín phẳng có diện tích S đặt trong từ trường đều. Biết vectơ pháp tuyến n của mặt phẳng chứa mạch hợp với vectơ cảm ứng từ B một góc α. Từ thông qua diện tích S là","o":["Φ=B·sinα","Φ=S·cosα","Φ=BS·cosα","Φ=BS·sinα"],"a":2},
+{"c":"HN","s":"Đề 0008","q":"Để bảo quản thực phẩm người ta sử dụng","o":["Tia alpha","Tia bêta","Tia X","Tia gamma"],"a":3},
+{"c":"TT","s":"Đề 0008","q":"Khi dòng điện trong dây dẫn đổi chiều, từ trường của dây dẫn","o":["không thay đổi","đổi chiều","tăng lên","giảm xuống"],"a":1},
+{"c":"TT","s":"Đề 0008","q":"Từ thông qua một mạch điện kín biến thiên đều theo thời gian. Trong khoảng thời gian 0,2 s, từ thông biến thiên một lượng là 0,8 Wb. Suất điện động cảm ứng trong mạch có độ lớn là","o":["0,16 V","0,25 V","4 V","0,4 V"],"a":2},
+{"c":"TT","s":"Đề 0008","q":"Khi từ thông qua mạch kín không đổi, suất điện động cảm ứng trong mạch","o":["bằng không","tỉ lệ thuận với từ thông","tỉ lệ nghịch với từ thông","lớn nhất"],"a":0},
+{"c":"TT","s":"Đề 0008","q":"Mạng điện sinh hoạt ở Việt Nam có điện áp hiệu dụng 220 V. Điện áp cực đại của mạng điện này là","o":["110 V","440 V","220√2 V","110√2 V"],"a":2},
+{"c":"HN","s":"Đề 0008","q":"Hạt nhân sodium ²³₁₁Na có số hạt neutron là","o":["12","23","11","34"],"a":0},
+{"c":"TT","s":"Đề 0008","q":"Từ trường không tác dụng lực lên","o":["điện tích đứng yên","điện tích chuyển động","dòng điện","nam châm"],"a":0},
+{"c":"HN","s":"Đề 0008","q":"Cho phản ứng hạt nhân ³⁵₁₇Cl + ᴬ_ZX → ³²₁₆S + ⁴₂He. Hạt nhân ᴬ_ZX là","o":["³₁H","¹₁H","²₁H","³₂He"],"a":1},
+{"c":"TT","s":"Đề 0008","q":"Một quan sát viên đi ngang qua một quả cầu tích điện đứng yên. Thiết bị mà người này mang theo sẽ ghi nhận sự tồn tại của","o":["chỉ có điện trường","chỉ có từ trường","điện trường và từ trường","hoặc điện trường, hoặc từ trường"],"a":2},
+{"c":"TT","s":"Đề 0008","q":"Một đoạn dây dẫn dài l=0,2 m đặt trong từ trường đều sao cho dây dẫn hợp với vectơ cảm ứng từ B một góc α=30°. Biết dòng điện qua dây là I=20 A, cảm ứng từ B=2×10⁻⁴ T. Lực từ tác dụng lên đoạn dây dẫn có độ lớn là","o":["2×10⁻³ N","10⁻³ N","4×10⁻⁴ N","10⁻⁴ N"],"a":2},
+{"c":"TT","s":"Đề 0008","q":"Một khung dây phẳng có dòng điện đi qua được đặt trong từ trường sao cho mặt phẳng khung dây cắt qua các đường sức từ. Khung dây sẽ quay cho đến khi mặt phẳng khung dây","o":["song song với đường sức từ","vuông góc với đường sức từ","nghiêng góc 45° với đường sức từ","song song hoặc vuông góc với đường sức từ, phụ thuộc vào chiều dòng điện"],"a":1},
+{"c":"TT","s":"Đề 0008","q":"Phát biểu nào sau đây về từ thông là không đúng?","o":["Khi đặt diện tích S vuông góc với các đường sức từ, nếu S càng lớn thì từ thông có độ lớn càng lớn","Đơn vị của từ thông là weber (Wb)","Giá trị của từ thông qua diện tích S cho biết cảm ứng từ của từ trường lớn hay bé","Từ thông là đại lượng vô hướng, có thể dương, âm hoặc bằng 0"],"a":2},
+{"c":"TT","s":"Đề 0008","q":"Một khung dây ABCD chuyển động dọc theo hai đường xx', yy' trong vùng từ trường đều MNPQ. Dòng điện cảm ứng sẽ xuất hiện trong khung khi","o":["khung đang chuyển động ở ngoài vùng MNPQ","khung đang chuyển động đến gần vùng MNPQ","khung đang chuyển động từ ngoài vào trong vùng MNPQ hoặc từ trong vùng MNPQ ra ngoài","khung đang chuyển động ở trong vùng MNPQ"],"a":2},
+{"c":"HN","s":"Đề 0008","q":"Biết khối lượng của proton, neutron, hạt nhân ¹⁶₈O lần lượt là 1,0073 amu, 1,0087 amu và 1 amu=931,5 MeV/c². Năng lượng liên kết của hạt nhân ¹⁶₈O xấp xỉ bằng","o":["14,25 MeV","18,76 MeV","128,17 MeV","190,81 MeV"],"a":2},
+{"c":"HN","s":"Đề 0008","q":"Phát biểu nào sau đây là không đúng khi nói về phản ứng phân hạch và phản ứng nhiệt hạch?","o":["Phản ứng phân hạch và phản ứng nhiệt hạch đều là phản ứng toả năng lượng","Điều kiện để phản ứng nhiệt hạch xảy ra là cần nhiệt độ rất cao","Phản ứng nhiệt hạch xảy ra với các hạt nhân nặng","Phản ứng hạt nhân trên Mặt Trời chủ yếu là phản ứng nhiệt hạch"],"a":2},
+{"c":"HN","s":"Đề 0008","q":"Một lò phản ứng hạt nhân dùng cho nghiên cứu có công suất nhiệt 250 kW. Lò sử dụng nhiên liệu ²³⁵U. Coi mỗi năm có 365 ngày, mỗi phân hạch sinh ra 200 MeV, NA=6,022×10²³ mol⁻¹. Khối lượng ²³⁵U mà lò phản ứng tiêu thụ trong 3 năm là","o":["461,6 gam","4,16 gam","288,4 gam","230,8 gam"],"a":2},
+// ===== ĐỀ 0009 – PHẦN I: MC =====
+// Đáp án: 1A 2A 3D 4B 5C 6A 7B 8A 9C 10A 11C 12C 13B 14A 15B 16B 17A 18C
+
+{"c":"TT","s":"Đề 0009","q":"Tính chất cơ bản của từ trường là","o":["gây ra lực từ tác dụng lên nam châm hoặc lên dòng điện đặt trong nó","gây ra lực hấp dẫn lên các vật đặt trong nó","gây ra lực đàn hồi tác dụng lên các dòng điện và nam châm đặt trong nó","gây ra sự biến đổi về tính chất điện của môi trường xung quanh"],"a":0},
+{"c":"TT","s":"Đề 0009","q":"Các đường sức từ trong lòng nam châm hình chữ U là","o":["những đường thẳng song song cách đều nhau","những đường cong, cách đều nhau","những đường thẳng hướng từ cực Nam sang cực Bắc","những đường cong hướng từ cực Nam sang cực Bắc"],"a":0},
+{"c":"TT","s":"Đề 0009","q":"Lực từ tác dụng lên một đoạn dây dẫn MN có dòng điện chạy qua đặt cùng phương với đường sức từ","o":["luôn cùng hướng với đường sức từ","luôn ngược hướng với đường sức từ","luôn vuông góc với đường sức từ","luôn bằng 0"],"a":3},
+{"c":"TT","s":"Đề 0009","q":"Phương của lực Lorenxo","o":["trùng với phương của véctơ cảm ứng từ","vuông góc với cả đường sức từ và véctơ vận tốc của hạt","vuông góc với đường sức từ, nhưng trùng với phương của vận tốc của hạt","trùng với phương véctơ vận tốc của hạt"],"a":1},
+{"c":"TT","s":"Đề 0009","q":"Chiều của lực từ tác dụng lên đoạn dây dẫn mang dòng điện, thường được xác định bằng quy tắc","o":["vặn đinh ốc 1","vặn đinh ốc 2","bàn tay trái","bàn tay phải"],"a":2},
+{"c":"HN","s":"Đề 0009","q":"Đồng vị là các nguyên tử mà hạt nhân có cùng số","o":["prôtôn nhưng số nơtron khác nhau","nơtrôn nhưng khác nhau số khối","nơtrôn nhưng số prôtôn khác nhau","nuclôn nhưng khác khối lượng"],"a":0},
+{"c":"HN","s":"Đề 0009","q":"Phản ứng hạt nhân là","o":["sự phân rã của hạt nhân nặng để biến đổi thành hạt nhân nhẹ bền hơn","sự tương tác giữa 2 hạt nhân dẫn đến sự biến đổi của chúng thành các hạt khác","sự biến đổi hạt nhân có kèm theo sự tỏa nhiệt","sự kết hợp 2 hạt nhân nhẹ thành 1 hạt nhân nặng"],"a":1},
+{"c":"HN","s":"Đề 0009","q":"Hạt nhân nguyên tử chì có 82 prôtôn và 125 nơtrôn. Hạt nhân nguyên tử này có kí hiệu là","o":["²⁰⁷₈₂Pb","¹²⁵₈₂Pb","⁸²₁₂₅Pb","⁸²₂₀₇Pb"],"a":0},
+{"c":"HN","s":"Đề 0009","q":"Các hạt cấu thành hạt nhân nguyên tử được liên kết với nhau bằng","o":["lực hút tĩnh điện","lực hấp dẫn","lực khác bản chất lực tĩnh điện và lực hấp dẫn","lực nguyên tử"],"a":2},
+{"c":"TT","s":"Đề 0009","q":"Trong các hình vẽ sau, hình vẽ nào biểu diễn đúng hướng của đường cảm ứng từ của dòng điện trong dây dẫn thẳng dài vô hạn vuông góc với mặt phẳng hình vẽ (dòng điện đi ra khỏi mặt phẳng)?","o":["Hình A: đường tròn, chiều ngược kim đồng hồ","Hình B: đường tròn, chiều thuận kim đồng hồ","Hình C: đường tròn nhưng dòng điện đi vào","Hình D: B và C"],"a":0},
+{"c":"TT","s":"Đề 0009","q":"Cảm ứng từ bên trong một ống dây điện hình trụ, có độ lớn tăng lên khi","o":["chiều dài hình trụ tăng lên","đường kính hình trụ giảm đi","số vòng dây quấn trên một đơn vị chiều dài tăng lên","cường độ dòng điện giảm đi"],"a":2},
+{"c":"TT","s":"Đề 0009","q":"Một electron bay vào một từ trường đều có cảm ứng từ B với vận tốc v. Khi góc hợp bởi v và B bằng θ (0<θ<90°), quỹ đạo chuyển động của electron có dạng","o":["đường thẳng","đường parabol","đường xoắn ốc","hình tròn"],"a":2},
+{"c":"HN","s":"Đề 0009","q":"Chọn nhận xét đúng khi so sánh về các tia phóng xạ.","o":["Bản chất của tia γ và của ánh sáng là khác nhau","tia γ và tia Rơn-ghen có cùng bản chất nhưng có bước sóng khác nhau","tia α có khả năng đâm xuyên rất lớn","Trong các tia phóng xạ, tia β là nguy hiểm nhất đối với con người"],"a":1},
+{"c":"HN","s":"Đề 0009","q":"Hạt X được tạo thành trong phản ứng hạt nhân ¹⁹₉F + p → ¹⁶₈O + X là","o":["⁴₂He","⁶₃Li","³₁T","n"],"a":0},
+{"c":"TT","s":"Đề 0009","q":"Một dây dẫn mang dòng điện có chiều từ trái sang phải nằm trong một từ trường có chiều từ dưới lên thì lực từ có chiều","o":["từ trái sang phải","từ trong ra ngoài","từ trên xuống dưới","từ ngoài vào trong"],"a":1},
+{"c":"TT","s":"Đề 0009","q":"Một khung dây tròn bán kính R=4 cm gồm 10 vòng dây. Dòng điện chạy trong mỗi vòng dây có cường độ I=0,3 A. Cảm ứng từ tại tâm của khung là","o":["3,34×10⁻⁵ T","4,7×10⁻⁵ T","6,5×10⁻⁵ T","3,5×10⁻⁵ T"],"a":1},
+{"c":"HN","s":"Đề 0009","q":"Hạt nhân nguyên tử chì có 82 prôtôn và 125 nơtrôn. Hạt nhân nguyên tử này có kí hiệu là","o":["²⁰⁷₈₂Pb","¹²⁵₈₂Pb","⁸²₁₂₅Pb","⁸²₂₀₇Pb"],"a":0},
+{"c":"TT","s":"Đề 0009","q":"Từ cảm B của dòng điện thẳng tại điểm M cách dòng điện 3 cm bằng 2,4×10⁻⁵ T. Tính cường độ dòng điện của dây dẫn (đơn vị A).","o":["0,36","0,72","3,6","7,2"],"a":2},
+// ===== ĐỀ 0010 – PHẦN I: MC =====
+// Đáp án: 1A 2B 3C 4D 5A 6C 7A 8C 9D 10D 11B 12C 13A 14D 15A 16C 17A 18C
+
+{"c":"TT","s":"Đề 0010","q":"Đặt một kim nam châm song song với dòng điện. Khi cho dòng điện chạy qua dây dẫn, ta thấy","o":["kim nam châm lệch một góc so với phương ban đầu","kim nam châm đứng yên","kim nam châm quay tròn xung quanh trục","kim nam châm quay trái, quay phải liên tục"],"a":0},
+{"c":"TT","s":"Đề 0010","q":"Cho một đoạn dây dẫn mang dòng điện I đặt song song với đường sức từ, chiều của dòng điện ngược chiều với chiều của đường sức từ.","o":["Lực từ tăng khi tăng cường độ dòng điện","Lực từ luôn bằng không khi tăng cường độ dòng điện","Lực từ giảm khi tăng cường độ dòng điện","Lực từ đổi chiều khi ta đổi chiều dòng điện"],"a":1},
+{"c":"TT","s":"Đề 0010","q":"Phát biểu nào sau đây là đúng khi nói về hiện tượng cảm ứng điện từ?","o":["Khi có từ thông biến thiên qua cuộn dây dẫn thì luôn có dòng điện cảm ứng xuất hiện trong cuộn dây, ngay cả khi cuộn dây không kín","Hiện tượng cảm ứng điện từ không xảy ra trong khối vật dẫn, kể cả khi có từ thông biến thiên qua khối vật dẫn đó","Hiện tượng cảm ứng điện từ chỉ tồn tại trong khoảng thời gian có từ thông biến thiên","Dòng điện cảm ứng chạy trong cuộn dây dẫn kín không gây ra tác dụng nhiệt đối với cuộn dây"],"a":2},
+{"c":"TT","s":"Đề 0010","q":"Nhận định nào sau đây là đúng khi nói về dòng điện xoay chiều?","o":["Dòng điện xoay chiều được sử dụng rộng rãi nhờ được sản xuất ở các nhà máy có công suất lớn","Dòng điện xoay chiều được sử dụng rộng rãi nhờ có điện áp lớn","Dòng điện xoay chiều được sử dụng rộng rãi nhờ có nhiều tác dụng hơn dòng điện một chiều","Dòng điện xoay chiều được sử dụng rộng rãi nhờ ưu thế dễ truyền tải đi xa nhờ máy biến áp"],"a":3},
+{"c":"TT","s":"Đề 0010","q":"Nhận định nào sau đây là đúng khi nói về máy biến áp?","o":["Máy biến áp là thiết bị biến đổi điện áp xoay chiều nhưng không làm thay đổi tần số dòng điện","Máy biến áp là thiết bị biến đổi điện áp xoay chiều cả về độ lớn và tần số của dòng điện","Máy biến áp là thiết bị không tiêu thụ điện năng, chỉ chuyển hoá điện áp của dòng điện","Máy biến áp là thiết bị hoạt động dựa trên hiện tượng cảm ứng điện từ có phần lõi sắt là nam châm vĩnh cửu"],"a":0},
+{"c":"TT","s":"Đề 0010","q":"Một máy phát sóng điện từ đang phát sóng theo phương thẳng đứng hướng lên. Biết tại điểm M trên phương truyền vào thời điểm t, vectơ cảm ứng từ đang cực đại và hướng về phía Tây. Vào thời điểm đó, vectơ cường độ điện trường đang có","o":["độ lớn bằng không","độ lớn cực đại và hướng về phía Đông","độ lớn cực đại và hướng về phía Bắc","độ lớn cực đại và hướng về phía Nam"],"a":2},
+{"c":"HN","s":"Đề 0010","q":"Các nguyên tử là nguyên tử đồng vị khi hạt nhân của chúng nó","o":["cùng số proton","cùng số neutron","cùng số neutron","cùng khối lượng"],"a":0},
+{"c":"HN","s":"Đề 0010","q":"Năng lượng liên kết riêng của hạt nhân có giá trị","o":["lớn nhất đối với các hạt nhân nhẹ","lớn nhất đối với các hạt nhân nặng","lớn nhất đối với các hạt nhân trung bình","như nhau với mọi hạt nhân"],"a":2},
+{"c":"HN","s":"Đề 0010","q":"Tìm phát biểu sai?","o":["Khi đi qua điện trường giữa hai bản tụ điện, tia α bị lệch về phía bản mang điện âm của tụ điện","Hạt α là hạt nhân nguyên tử helium","Tia α làm ion hoá môi trường","Tia α đi qua điện trường giữa hai bản tụ điện sẽ bị lệch về phía bản mang điện dương của tụ điện"],"a":3},
+{"c":"HN","s":"Đề 0010","q":"Chọn phát biểu sai về vai trò của y học hạt nhân trong đời sống?","o":["Chẩn đoán và điều trị các bệnh ung thư, bệnh nội tiết, tim mạch...","Xử lí thực phẩm sử dụng bức xạ ion hoá, khử trùng các sản phẩm và thiết bị y tế","Xác định nguồn nước, đánh giá nguy cơ xâm nhập nước mặn hoặc ô nhiễm nguồn nước","Chữa bệnh còi xương"],"a":3},
+{"c":"TT","s":"Đề 0010","q":"Hình nào biểu diễn đúng hướng lực từ tác dụng lên một đoạn dây dẫn thẳng mang dòng điện I có chiều hướng ra khỏi trang giấy đặt trong từ trường đều hướng sang phải?","o":["Hình 1: lực hướng xuống","Hình 2: lực hướng lên","Hình 3: lực hướng vào trong","Hình 4: lực hướng ra ngoài"],"a":1},
+{"c":"TT","s":"Đề 0010","q":"Đặt đoạn dây dẫn thẳng có chiều dài không đổi vào trong từ trường đều có véctơ cảm ứng từ hợp với đoạn dây góc α khác 0. Khi tăng đồng thời cường độ dòng điện trong dây dẫn và độ lớn cảm ứng từ lên 4 lần thì lực từ tác dụng lên đoạn dây tăng lên","o":["8 lần","4 lần","16 lần","24 lần"],"a":2},
+{"c":"TT","s":"Đề 0010","q":"Một hình vuông cạnh 5 cm đặt trong từ trường đều có cảm ứng từ B=8×10⁻⁴ T. Từ thông qua hình vuông đó bằng 10⁻⁶ Wb. Góc hợp bởi véctơ cảm ứng từ với mặt phẳng của hình vuông đó là","o":["30°","45°","60°","0°"],"a":0},
+{"c":"TT","s":"Đề 0010","q":"Một thanh dây dẫn dài 20 cm chuyển động tịnh tiến trong từ trường đều có B=5×10⁻⁴ T. Vectơ vận tốc của thanh vuông góc với thanh, vuông góc với vectơ cảm ứng từ và có độ lớn 5 m/s. Suất điện động cảm ứng trong thanh có độ lớn là","o":["0,05 V","50 mV","5 mV","0,5 mV"],"a":3},
+{"c":"TT","s":"Đề 0010","q":"Suất điện động cảm ứng do máy phát điện xoay chiều một pha tạo ra có biểu thức e=220√2·cos(100πt+0,25π) V. Giá trị cực đại của suất điện động này là","o":["220√2 V","110√2 V","110 V","220 V"],"a":0},
+{"c":"TT","s":"Đề 0010","q":"Chọn khẳng định sai. Dòng điện xoay chiều có i=0,5√2·cos(100πt) A. Dòng điện này có","o":["Cường độ dòng điện hiệu dụng 0,5 A","tần số là f=50 Hz","Cường độ dòng điện cực đại là √2 A","chu kỳ là T=0,02 s"],"a":2},
+{"c":"TT","s":"Đề 0010","q":"Một máy biến thế có số vòng của cuộn sơ cấp là 5000 và thứ cấp là 1000. Bỏ qua mọi hao phí của máy biến thế. Đặt vào hai đầu cuộn sơ cấp hiệu điện thế xoay chiều có giá trị hiệu dụng 100 V thì hiệu điện thế hiệu dụng ở hai đầu cuộn thứ cấp khi để hở có giá trị là","o":["20 V","40 V","10 V","500 V"],"a":0},
+{"c":"TT","s":"Đề 0010","q":"Một sóng điện từ có tần số f=6 MHz. Bước sóng của sóng điện từ đó là","o":["λ=25 m","λ=60 m","λ=50 m","λ=100 m"],"a":2},
+
+
+
+
+
 
 ];
 
@@ -127,7 +302,6 @@ var TF = [
   {"c": "HN", "q": "Phản ứng: ²₁H + ²₁H → X + ¹₀n. Mỗi phản ứng tỏa ~4 MeV.", "stmts": [{"t": "a. Hạt X là hạt ⁴₂He.", "a": false}, {"t": "b. Hạt nhân X có 2 proton và 1 neutron.", "a": true}, {"t": "c. Số hạt nhân helium từ phản ứng khi tổng hợp được 100g là 2,008.10²⁵.", "a": false}, {"t": "d. Năng lượng tỏa ra khi tổng hợp 100g helium xấp xỉ 8,03.10²⁶ MeV.", "a": true}]},
   {"c": "HN", "q": "Chất phóng xạ ²¹⁰₈₄Po phóng tia α → X. T = 138 ngày.", "stmts": [{"t": "a. Hạt nhân X là hạt nhân Bismuth.", "a": false}, {"t": "b. Ban đầu 10g Po, sau 276 ngày còn lại 2,5g.", "a": true}, {"t": "c. Ban đầu 5g Po. Độ phóng xạ là 9,23.10¹⁴ Bq.", "a": false}, {"t": "d. Ban đầu 0,168g Po. Khối lượng hạt X (Pb) tạo thành sau 414 ngày là 0,1442g.", "a": true}]},
   {"c": "HN", "q": "Khi nói về lò phản ứng hạt nhân.", "stmts": [{"t": "a. Nhà máy điện hạt nhân không phát thải khí gây hiệu ứng nhà kính như CO₂.", "a": true}, {"t": "b. Nhà máy điện hạt nhân có thể hoạt động liên tục nhiều năm mà không cần bảo trì.", "a": false}, {"t": "c. Việc xử lý chất thải hạt nhân đòi hỏi công nghệ đơn giản và chi phí thấp.", "a": false}, {"t": "d. Vật liệu chứa chất thải hạt nhân cần độ bền rất cao để bảo quản trong thời gian dài.", "a": true}]},
-
   // ===== ĐỀ 0001 – PHẦN II: TF =====
   // Đáp án: C1: a)S b)S c)Đ d)S | C2: a)Đ b)Đ c)Đ d)S | C3: a)Đ b)S c)S d)Đ | C4: a)S b)S c)Đ d)Đ
 
@@ -155,6 +329,221 @@ var TF = [
     {"t":"c) Thời gian cần thiết để một mẫu chất phóng xạ giảm còn 1/8 khối lượng ban đầu là t=3T, với T là chu kỳ bán rã.","a":true},
     {"t":"d) Một mẫu phóng xạ ban đầu có 10²⁴ hạt nhân. Số hạt nhân còn lại sau 3 chu kỳ bán rã là 1,25×10²³ hạt.","a":true}
   ]},
+  // ===== ĐỀ 0002 – PHẦN II: TF =====
+  // Đáp án: C1: a)Đ b)S c)S d)Đ | C2: a)Đ b)Đ c)S d)S | C3: a)Đ b)Đ c)S d)S | C4: a)S b)S c)S d)Đ
+
+  {"c":"TT","q":"Đề 0002 – Trong các phát biểu sau đây về đường sức từ và đường sức điện.","stmts":[
+    {"t":"a) Đường sức điện là đường được vẽ trong điện trường sao cho tiếp tuyến tại một điểm bất kì trùng với phương của cường độ điện trường tại điểm đó.","a":true},
+    {"t":"b) Bên ngoài một thanh nam châm, các đường sức từ đi từ cực Nam đến cực Bắc.","a":false},
+    {"t":"c) Các đường sức từ của dòng điện tròn có chiều đi vào mặt Bắc và đi ra mặt Nam của dòng điện tròn ấy.","a":false},
+    {"t":"d) Đường sức từ là những đường vẽ trong không gian có từ trường, sao cho tiếp tuyến với nó tại mỗi điểm có phương trùng với phương của kim nam châm nhỏ nằm cân bằng tại điểm đó.","a":true}
+  ]},
+  {"c":"HN","q":"Đề 0002 – Ban đầu có 15,0 g Cobalt ⁶⁰₂₇Co là chất phóng xạ với chu kì bán rã T=5,27 năm. Sản phẩm phân rã là hạt nhân bền ⁶⁰₂₈Ni.","stmts":[
+    {"t":"a) Tia phóng xạ phát ra là tia β⁻.","a":true},
+    {"t":"b) Độ phóng xạ của mẫu tại thời điểm ban đầu là 6,28×10¹⁴ Bq.","a":true},
+    {"t":"c) Khối lượng ⁶⁰₂₈Ni được tạo thành sau 7,25 năm từ thời điểm ban đầu là 5,78 g.","a":false},
+    {"t":"d) Kể từ thời điểm ban đầu, tỉ số giữa khối lượng ⁶⁰₂₇Co và khối lượng ⁶⁰₂₈Ni có trong mẫu tại thời điểm 2,56 năm là 0,400.","a":false}
+  ]},
+  {"c":"HN","q":"Đề 0002 – Biết khối lượng proton, neutron, hạt nhân vàng ¹⁹⁷₇₉Au và hạt nhân bạc ¹⁰⁷₄₇Ag lần lượt là 1,00728 u; 1,00866 u; 196,92323 u và 106,87931 u.","stmts":[
+    {"t":"a) Hạt nhân vàng ¹⁹⁷₇₉Au nhiều hơn hạt nhân bạc ¹⁰⁷₄₇Ag 58 neutron.","a":true},
+    {"t":"b) Độ hụt khối của hạt nhân ¹⁹⁷₇₉Au là 1,67377 u.","a":true},
+    {"t":"c) Năng lượng liên kết của hạt nhân ¹⁰⁷₄₇Ag là 898,4 MeV.","a":false},
+    {"t":"d) Hạt nhân vàng ¹⁹⁷₇₉Au bền vững hơn hạt nhân bạc ¹⁰⁷₄₇Ag.","a":false}
+  ]},
+  {"c":"HN","q":"Đề 0002 – Hạt nhân ²³⁵₉₂U hấp thụ một neutron nhiệt rồi vỡ ra thành ¹⁴¹₅₆Ba và ⁹³₃₆Kr kèm theo giải phóng một số hạt neutron mới. Tổng khối lượng các hạt trước phản ứng lớn hơn tổng khối lượng các hạt sau phản ứng là 0,1897 u.","stmts":[
+    {"t":"a) Quá trình này giải phóng kèm theo 3 hạt neutron mới.","a":false},
+    {"t":"b) Phản ứng phân hạch là nguồn gốc năng lượng của các ngôi sao.","a":false},
+    {"t":"c) Năng lượng toả ra sau phản ứng là 200 MeV.","a":false},
+    {"t":"d) Năng lượng toả ra khi 25,0 g ²³⁵₉₂U phân hạch hoàn toàn theo phản ứng trên là 1,81×10¹² J.","a":true}
+  ]},
+// ===== ĐỀ 0003 – PHẦN II: TF =====
+// Đáp án: C1: a)S b)Đ c)Đ d)S | C2: a)Đ b)S c)S d)Đ | C3: a)S b)Đ c)Đ d)S | C4: a)Đ b)Đ c)S d)S
+
+{"c":"TT","q":"Đề 0003 – Một dây dẫn có chiều dài 10 m đặt trong từ trường đều có B=6×10⁻² T hướng từ trên xuống dưới. Cho dòng điện 10,5 A chạy qua dây dẫn chiều từ trái qua phải.","stmts":[
+  {"t":"a) Lực từ tác dụng lên đoạn dây dẫn mang dòng điện có chiều từ trong ra ngoài.","a":false},
+  {"t":"b) Lực từ tác dụng lên dây dẫn khi dây dẫn đặt vuông góc với B bằng 6,3 N.","a":true},
+  {"t":"c) Vẫn giữ dây dẫn đặt vuông góc với B, nếu giảm cường độ dòng điện đi một nửa thì độ lớn cảm ứng từ B sẽ tăng lên gấp đôi.","a":true},
+  {"t":"d) Lực tác dụng lên đoạn dây dẫn là lực điện.","a":false}
+]},
+{"c":"TT","q":"Đề 0003 – Một khung dây có 100 vòng và diện tích là 5 cm² đặt trong từ trường của nam châm điện. Cảm ứng từ tăng đều từ 0,15 T lên 1,55 T trong 0,20 giây. Mặt phẳng khung dây vuông góc với các đường sức từ.","stmts":[
+  {"t":"a) Từ thông qua diện tích S khi khung dây đặt trong từ trường có cảm ứng từ B=0,15 T bằng 7,5×10⁻³ Wb.","a":true},
+  {"t":"b) Suất điện động cảm ứng xuất hiện trong khung dây có độ lớn là 0,1 V.","a":false},
+  {"t":"c) Góc hợp bởi cảm ứng từ B và pháp tuyến n bằng 90°.","a":false},
+  {"t":"d) Khi từ thông qua khung dây biến thiên thì trong khung dây đó xuất hiện một dòng điện gọi là dòng điện cảm ứng.","a":true}
+]},
+{"c":"HN","q":"Đề 0003 – Cho phản ứng hạt nhân: ²³₁₁Na + ¹₁H → ᴬ_ZX + ²⁰₁₀Ne. Khối lượng ²³Na=22,9837u; ²⁰Ne=19,9869u; ᴬ_ZX=4,0015u; ¹H=1,0073u và 1u=931,5 MeV/c².","stmts":[
+  {"t":"a) Phản ứng hạt nhân là phản ứng thu năng lượng.","a":false},
+  {"t":"b) Năng lượng tỏa ra trong phản ứng là 2,4219 MeV.","a":true},
+  {"t":"c) Hạt nhân ᴬ_ZX trong phản ứng là hạt nhân ⁴₂He.","a":true},
+  {"t":"d) Hạt nhân ¹₁H là hạt nhân nặng.","a":false}
+]},
+{"c":"TT","q":"Đề 0003 – Đặt một điện áp xoay chiều u=200cos(100πt+π/2) V vào hai đầu một điện trở R=100 Ω.","stmts":[
+  {"t":"a) Giá trị hiệu dụng của điện áp xoay chiều bằng 100√2 V.","a":true},
+  {"t":"b) Cường độ dòng điện hiệu dụng qua điện trở bằng √2 A.","a":true},
+  {"t":"c) Pha ban đầu của cường độ dòng điện trong mạch bằng 0.","a":false},
+  {"t":"d) Chu kì của điện áp xoay chiều bằng 0,01s.","a":false}
+]},
+
+// ===== ĐỀ 0005 – PHẦN II: TF =====
+// Đáp án: C1: a)Đ b)Đ c)S d)S | C2: a)S b)S c)Đ d)S | C3: a)S b)S c)Đ d)Đ | C4: a)Đ b)Đ c)Đ d)S
+
+{"c":"TT","q":"Đề 0005 – Từ trường đều giữa hai cực của nam châm hình chữ U bằng 0,075 T. Một cuộn dây nhỏ có tiết diện thẳng 4,8 cm² có 20 vòng dây đặt sao cho mặt phẳng của nó vuông góc với từ trường. Cuộn dây được rút ra khỏi từ trường trong 0,3s.","stmts":[
+  {"t":"a) Góc hợp bởi giữa vector từ trường và vector pháp tuyến bằng không.","a":true},
+  {"t":"b) Từ thông mỗi vòng của cuộn dây khi nó nằm giữa hai cực của nam châm là 3,6×10⁻⁵ Wb.","a":true},
+  {"t":"c) Độ biến thiên từ thông trong mỗi vòng dây khi cuộn dây được rút ra khỏi từ trường có giá trị là 3,6×10⁻⁵ Wb.","a":false},
+  {"t":"d) Suất điện động cảm ứng trung bình trong cuộn dây là 2×10⁻³ V.","a":false}
+]},
+{"c":"TT","q":"Đề 0005 – Một đoạn dây cáp thẳng dài 0,05 m mang dòng điện 2 A được đặt trong một từ trường đều có độ lớn cảm ứng từ là 0,5 T.","stmts":[
+  {"t":"a) Lực từ tác dụng lên đoạn dây cáp là lớn nhất khi nó định hướng song song với các đường sức từ.","a":false},
+  {"t":"b) Không có lực từ tác dụng lên đoạn dây cáp nếu nó định hướng vuông góc với các đường sức từ.","a":false},
+  {"t":"c) Khi đoạn dây cáp định hướng sao cho chiều dòng điện hợp một góc 30° với các đường sức từ thì lực từ tác dụng lên đoạn dây cáp có độ lớn 0,025 N.","a":true},
+  {"t":"d) Khi đoạn dây cáp quay sao cho góc hợp giữa chiều dòng điện và các đường sức từ tăng dần thì lực từ tác dụng lên nó có độ lớn giảm dần.","a":false}
+]},
+{"c":"HN","q":"Đề 0005 – Hạt nhân ¹²₆C và ¹⁶₈O có khối lượng hạt nhân lần lượt là 12 u và 15,9949 u. Biết mp=1,0073 u; mn=1,0087 u và 1uc²=931,5 MeV.","stmts":[
+  {"t":"a) Hạt nhân ¹²₆C có số neutron nhiều hơn hạt nhân ¹⁶₈O.","a":false},
+  {"t":"b) Độ hụt khối của hạt nhân ¹⁶₈O là 0,096 u.","a":false},
+  {"t":"c) Năng lượng liên kết của hạt nhân ¹²₆C là 89,424 MeV.","a":true},
+  {"t":"d) Hạt nhân ¹⁶₈O bền vững hơn hạt nhân ¹²₆C.","a":true}
+]},
+{"c":"HN","q":"Đề 0005 – Hạt nhân A có 9 proton và 10 neutron. Hạt nhân B có tất cả 20 nucleon, trong đó có 11 nucleon trung hòa. Hạt nhân C có 10 nucleon mang điện và 10 nucleon trung hòa.","stmts":[
+  {"t":"a) B và C có cùng số khối.","a":true},
+  {"t":"b) A và B là hai hạt nhân đồng vị.","a":true},
+  {"t":"c) B và C có bán kính xấp xỉ bằng nhau.","a":true},
+  {"t":"d) A và C có cùng điện tích.","a":false}
+]},
+// ===== ĐỀ 0006 – PHẦN II: TF =====
+// Đáp án: C1: a)Đ b)S c)Đ d)S | C2: a)Đ b)Đ c)S d)Đ | C3: a)S b)Đ c)S d)Đ | C4: a)Đ b)Đ c)S d)S
+
+{"c":"TT","q":"Đề 0006 – Hình biểu diễn một thanh dẫn điện MN trượt trên hai thanh kim loại vuông góc với cảm ứng từ. B=0,40 T, MN=PQ=0,20 m. Thanh MN chuyển động về bên trái với vận tốc 0,2 m/s. Toàn bộ mạch có điện trở 2,0 Ω.","stmts":[
+  {"t":"a) Suất điện động cảm ứng trong thanh MN có độ lớn là 1,6×10⁻² V.","a":true},
+  {"t":"b) Dòng điện trong mạch có chiều NMQP.","a":false},
+  {"t":"c) Lực kéo thanh MN chuyển động đều với tốc độ đã cho là 6,4×10⁻⁴ N.","a":true},
+  {"t":"d) Nếu coi NM là nguồn điện thì M đóng vai trò cực dương.","a":false}
+]},
+{"c":"HN","q":"Đề 0006 – Đồ thị biểu diễn sự thay đổi độ phóng xạ của một mẫu chất phóng xạ β⁻ theo thời gian (từ đồ thị: H₀=80 kBq, T=1,5 giờ).","stmts":[
+  {"t":"a) Sau 4,5 giờ từ thời điểm ban đầu, độ phóng xạ của mẫu là 10 kBq.","a":true},
+  {"t":"b) Chu kì bán rã của chất phóng xạ là 1,5 giờ.","a":true},
+  {"t":"c) Trong 3 giờ đầu, mẫu chất phát ra 20000 hạt electron.","a":false},
+  {"t":"d) Kể từ thời điểm ban đầu, số hạt nhân chất phóng xạ còn lại trong mẫu sau 9 giờ bằng 1/64 số hạt nhân chất phóng xạ ban đầu.","a":true}
+]},
+{"c":"TT","q":"Đề 0006 – Hai dây thẳng dài nằm song song với nhau và cách nhau 4,00 cm. Điểm M cách dây có dòng điện I₂ một đoạn là 4,00 cm. Dòng điện trong hai dây này có cùng cường độ là 5,00 A nhưng ngược chiều nhau.","stmts":[
+  {"t":"a) Cảm ứng từ do dòng điện I₂ gây ra tại M có chiều hướng sang trái.","a":false},
+  {"t":"b) Cảm ứng từ do dòng điện I₁ gây ra tại M có độ lớn là 1,25×10⁻⁵ T.","a":true},
+  {"t":"c) Cảm ứng từ do dòng điện I₁ gây ra tại M có chiều hướng sang phải.","a":false},
+  {"t":"d) Cảm ứng từ do cả hai dòng điện gây ra tại M có độ lớn là 1,25×10⁻⁵ T.","a":true}
+]},
+// ===== ĐỀ 0007 – PHẦN II: TF =====
+// Đáp án: C1: a)Đ b)Đ c)S d)Đ | C2: a)Đ b)Đ c)Đ d)S | C3: a)Đ b)S c)S d)Đ | C4: a)Đ b)S c)Đ d)Đ
+
+{"c":"TT","q":"Đề 0007 – Máy phát điện xoay chiều 1 pha có Rôto là các thanh nam châm quay quanh trục cố định, phần stato gồm các cuộn dây mắc nối tiếp. Điện áp đầu ra u=220√2·cos(100πt) V.","stmts":[
+  {"t":"a) Nguyên tắc hoạt động của máy phát điện xoay chiều dựa trên hiện tượng cảm ứng điện từ.","a":true},
+  {"t":"b) Khi tốc độ quay của Roto càng lớn thì suất điện động cực đại tạo ra ở phần Stato có giá trị càng lớn.","a":true},
+  {"t":"c) Điện áp hiệu dụng ở đầu ra của máy phát điện là 220 A.","a":false},
+  {"t":"d) Thời điểm điện áp ở đầu ra có giá trị bằng giá trị hiệu dụng lần thứ 2 là 7/400 s.","a":true}
+]},
+{"c":"TT","q":"Đề 0007 – Hệ thống Radar TRML-4d phát ra sóng điện từ có vận tốc c=3×10⁸ m/s, rada quay đều quanh trục với tốc độ góc π rad/s. Lần phát sóng đầu tiên: thời gian từ lúc phát đến lúc nhận là 150 μs. Sau đó ăng ten quay 1 vòng rồi lại phát sóng về phía máy bay, thời gian là 146 μs.","stmts":[
+  {"t":"a) Sóng điện từ do ăng ten phát ra là sóng ngang.","a":true},
+  {"t":"b) Sóng điện từ có thể truyền trong chân không.","a":true},
+  {"t":"c) Vị trí của máy bay trong lần phát sóng đầu tiên là 45 km.","a":true},
+  {"t":"d) Vận tốc của máy bay mà radar đo được là 300 m/s.","a":false}
+]},
+{"c":"HN","q":"Đề 0007 – Một nhà máy điện hạt nhân sử dụng nguyên liệu ²³⁵₉₂U. Phản ứng trong lò: ²³⁵₉₂U + n → ⁹⁵₃₉Y + ¹³⁸₅₃I + kn. Mỗi phản ứng tạo ra 200 MeV, hiệu suất nhà máy 40%, công suất phát điện 1500 MW, NA=6,02×10²³ hạt/mol.","stmts":[
+  {"t":"a) Phản ứng phân hạch trong lò phản ứng là phản ứng phân hạch.","a":true},
+  {"t":"b) Số hạt neutron tạo ra trong 1 phản ứng hạt nhân ở lò phản ứng là 2 hạt.","a":false},
+  {"t":"c) Để lò phản ứng hoạt động bình thường mà không bị nổ người ta phải sử dụng các thanh điều khiển bằng sắt ngập sâu vào khu vực chứa nhiên liệu để hấp thụ các hạt neutron thừa.","a":false},
+  {"t":"d) Khối lượng ²³⁵₉₂U đã sử dụng trong lò phản ứng hạt nhân trong 1 năm xấp xỉ là 1442,6 kg.","a":true}
+]},
+{"c":"HN","q":"Đề 0007 – Máy xạ trị thường sử dụng nguồn phóng xạ ⁶⁰₂₇Co phóng xạ β⁻ có chu kì bán rã là 5,3 năm. Thiết bị phải bảo dưỡng trước khi độ phóng xạ giảm đi 7% và thay nguồn phóng xạ mới khi độ phóng xạ giảm đi 50%.","stmts":[
+  {"t":"a) Phương trình phóng xạ Co là: ⁶⁰₂₇Co → ⁶⁰₂₈Ni + β⁻ + ν̄.","a":true},
+  {"t":"b) Tia phóng xạ β⁻ là hạt electron phóng ra từ hạt nhân mẹ với tốc độ 2×10⁷ m/s.","a":false},
+  {"t":"c) Thời gian bảo dưỡng máy xạ trị xấp xỉ là 6,65 tháng.","a":true},
+  {"t":"d) Thời gian thay nguồn phóng xạ của máy xạ trị là 5,3 năm.","a":true}
+]},
+// ===== ĐỀ 0008 – PHẦN II: TF =====
+// Đáp án: C1: a)Đ b)Đ c)S d)Đ | C2: a)Đ b)Đ c)Đ d)S | C3: a)S b)Đ c)Đ d)S | C4: a)Đ b)S c)S d)S
+
+{"c":"TT","q":"Đề 0008 – Để tạo ra dòng điện xoay chiều, cho khung dây dẫn phẳng ABCD gồm 50 vòng dây, mỗi vòng có diện tích S=100 cm², quay đều với tốc độ 3000/π vòng/phút quanh một trục vuông góc với các đường sức của từ trường đều có cảm ứng từ B=0,2 T.","stmts":[
+  {"t":"a) Dòng điện được tạo ra từ khung dây theo hiện tượng cảm ứng điện từ.","a":true},
+  {"t":"b) Tại vị trí khung dây như hình vẽ (mặt phẳng khung song song với B), từ thông qua khung dây bằng không.","a":true},
+  {"t":"c) Từ thông cực đại qua khung dây là 10 Wb.","a":false},
+  {"t":"d) Suất điện động hiệu dụng trong khung dây là 5√2 V.","a":true}
+]},
+{"c":"TT","q":"Đề 0008 – Cho một dòng điện xoay chiều i=5cos(250πt) mA đi qua một chiếc loa điện động.","stmts":[
+  {"t":"a) Dao động của màng loa là một dao động điều hoà.","a":true},
+  {"t":"b) Loa phát ra âm thanh có tần số 125 Hz.","a":true},
+  {"t":"c) Nếu tăng biên độ dòng điện thì loa phát ra âm thanh lớn hơn.","a":true},
+  {"t":"d) Nếu tăng tần số góc của dòng điện lớn hơn 40000π rad/s thì loa phát ra hạ âm.","a":false}
+]},
+{"c":"HN","q":"Đề 0008 – Trên các ngôi sao xảy ra phản ứng: ³₁²H + ¹₁H → ¹₀n + ⁴₂He. Cho biết mH1=1,0073 amu, mH2=2,0141 amu, mn=1,0087 amu, mHe=4,0015 amu.","stmts":[
+  {"t":"a) Phản ứng trên được gọi là phản ứng phân hạch.","a":false},
+  {"t":"b) Để phản ứng trên xảy ra, cần nhiệt độ rất lớn.","a":true},
+  {"t":"c) Mỗi phản ứng toả ra một năng lượng 23,1 MeV.","a":true},
+  {"t":"d) Các ngôi sao tồn tại vĩnh viễn.","a":false}
+]},
+{"c":"HN","q":"Đề 0008 – Radon ²²²Rn là một loại khí phóng xạ. Chu kì bán rã của radon là 3,82 ngày. Ngưỡng nguy hiểm là 4,00 pCi (1 pCi=3,66×10⁻² Bq) trong mỗi L không khí.","stmts":[
+  {"t":"a) Cách đơn giản giảm hàm lượng radon tích tụ trong nhà là mở cửa để không khí lưu thông.","a":true},
+  {"t":"b) Hằng số phóng xạ của radon là 5,04×10⁻⁵ s⁻¹.","a":false},
+  {"t":"c) Một gam radon có độ phóng xạ là 1,37×10¹⁷ Bq.","a":false},
+  {"t":"d) Có 2,30×10⁴ nguyên tử khí radon trong mỗi m³ không khí thì độ phóng xạ của nó đạt mức 4,00 pCi.","a":false}
+]},
+// ===== ĐỀ 0009 – PHẦN II: TF =====
+// Đáp án: C1: a)Đ b)S c)Đ d)Đ | C2: a)Đ b)S c)S d)Đ | C3: a)Đ b)Đ c)S d)Đ | C4: a)Đ b)Đ c)S d)S
+
+{"c":"HN","q":"Đề 0009 – Hạt X được tạo thành trong phản ứng hạt nhân ¹⁹₉F + p → ¹⁶₈O + X.","stmts":[
+  {"t":"a) Hạt nhân X có 2 proton.","a":true},
+  {"t":"b) Hạt nhân X có 2 nuclon.","a":false},
+  {"t":"c) Hạt nhân X có 4 nuclon.","a":true},
+  {"t":"d) Hạt nhân X là hạt ⁴₂He.","a":true}
+]},
+{"c":"HN","q":"Đề 0009 – Dùng hạt α bắn phá hạt nhân nhôm ²⁷₁₃Al, thu được nơtron và nhân X. Biết hạt nhân X sinh ra không bền vững mà có tính phóng xạ β⁺ và tạo thành hạt nhân con Si.","stmts":[
+  {"t":"a) Hạt nhân X thu được có số proton là 15.","a":true},
+  {"t":"b) Phóng xạ β⁺ là dòng ⁰₋₁e.","a":false},
+  {"t":"c) Hạt nhân con Si có 31 nuclon.","a":false},
+  {"t":"d) Hạt nhân con thu được là ³⁰₁₄Si.","a":true}
+]},
+{"c":"TT","q":"Đề 0009 – Tại tâm của dòng điện tròn gồm 100 vòng, người ta đo được cảm ứng từ B=62,8×10⁻⁴ T. Đường kính vòng dây là 10 cm.","stmts":[
+  {"t":"a) Bán kính vòng dây là 5 cm.","a":true},
+  {"t":"b) Cường độ dòng điện chạy qua mỗi vòng là 5 A.","a":true},
+  {"t":"c) Muốn tăng dòng điện lên gấp 2 lần thì cần tăng số vòng dây lên gấp 2.","a":false},
+  {"t":"d) Muốn dòng điện giảm 2 lần thì bán kính vòng dây cần giảm 2.","a":true}
+]},
+{"c":"TT","q":"Đề 0009 – Treo đoạn dây dẫn có chiều dài l=5 cm, khối lượng m=5 g bằng hai dây mảnh nhẹ sao cho dây dẫn nằm ngang. Cảm ứng từ hướng thẳng đứng từ dưới lên, B=0,5 T và dòng điện đi qua dây dẫn là I=2 A. Lấy g=10 m/s².","stmts":[
+  {"t":"a) Các lực tác dụng lên đoạn dây là P, Ft, T.","a":true},
+  {"t":"b) Lực từ tác dụng lên sợi dây có hướng từ trong ra ngoài.","a":true},
+  {"t":"c) Lực từ có độ lớn bằng 0,5 N.","a":false},
+  {"t":"d) Sợi dây treo lệch 1 góc 30° so với phương thẳng đứng.","a":false}
+]},
+// ===== ĐỀ 0010 – PHẦN II: TF =====
+// Đáp án: C1: a)Đ b)Đ c)Đ d)S | C2: a)Đ b)Đ c)S d)S | C3: a)Đ b)S c)Đ d)S | C4: a)Đ b)S c)Đ d)Đ
+
+{"c":"TT","q":"Đề 0010 – Một đoạn dây dẫn bằng đồng được đặt vuông góc với đường sức từ của một từ trường đều và nằm cân bằng theo phương nằm ngang song song với mặt đất, trong đoạn dây có dòng điện với cường độ I=0,7 A. Biết khối lượng của một đơn vị chiều dài của đoạn dây là 0,0466 kg/m, lấy g=9,8 m/s².","stmts":[
+  {"t":"a) Cảm ứng từ có phương nằm ngang.","a":true},
+  {"t":"b) Cảm ứng từ có chiều từ trái qua phải.","a":true},
+  {"t":"c) Độ lớn lực từ bằng độ lớn lực hấp dẫn.","a":true},
+  {"t":"d) Độ lớn cảm ứng từ có giá trị là 7×10⁻² T.","a":false}
+]},
+{"c":"TT","q":"Đề 0010 – Khung dây đồng ABCD hình chữ nhật có chiều rộng 5 cm, chiều dài 10 cm đặt vào từ trường đều có độ lớn cảm ứng từ 0,2 T. Véctơ cảm ứng từ hợp với mặt phẳng khung góc 60°.","stmts":[
+  {"t":"a) Véctơ cảm ứng từ hợp với véctơ pháp tuyến của khung một góc 30°.","a":true},
+  {"t":"b) Từ thông gửi qua khung có giá trị là 5√3×10⁻⁴ Wb.","a":true},
+  {"t":"c) Nếu tăng độ lớn cảm ứng từ lên 2 lần đồng thời tăng số vòng dây của khung dây lên 100 vòng thì từ thông qua khung sẽ tăng lên 100 lần.","a":false},
+  {"t":"d) Nếu bóp méo khung dây đồng thì từ thông gửi qua mạch sẽ không thay đổi.","a":false}
+]},
+{"c":"HN","q":"Đề 0010 – Chất phóng xạ Coban ⁶⁰₂₇Co phóng xạ β⁻ dùng trong y tế có chu kì bán rã T=5,33 năm và khối lượng nguyên tử là 58,9u. Ban đầu có 500 g ⁶⁰Co.","stmts":[
+  {"t":"a) Phương trình phân rã: ⁶⁰₂₇Co → ⁰₋₁e + ⁶⁰₂₈Ni.","a":true},
+  {"t":"b) Hạt nhân Co có 60 hạt proton.","a":false},
+  {"t":"c) Khối lượng còn lại của ⁶⁰Co sau 12 năm là 105 g.","a":true},
+  {"t":"d) Sau 14 năm thì khối lượng chất phóng xạ còn lại 100 g.","a":false}
+]},
+{"c":"TT","q":"Đề 0010 – Một dòng điện xoay chiều có điện áp tức thời là u=100cos(100πt+π/3) V.","stmts":[
+  {"t":"a) Điện áp hiệu dụng là 50√2 V.","a":true},
+  {"t":"b) Pha ban đầu của điện áp là 100πt+π/3 (rad).","a":false},
+  {"t":"c) Chu kì điện áp là 0,02 s.","a":true},
+  {"t":"d) Tại thời điểm 0,5 s điện áp có giá trị 50 V.","a":true}
+]},
+
+
+
+
 ];
 
 var SA = [
@@ -185,6 +574,83 @@ var SA = [
   {"c":"TT","q":"Đề 0001 – Một khung dây dẫn hình vuông cạnh 20 cm nằm trong từ trường đều độ lớn B=2 T sao cho các đường sức vuông góc với mặt khung dây. Từ thông qua khung dây bằng bao nhiêu Weber?","a":"0,08"},
   {"c":"TT","q":"Đề 0001 – Một dòng điện xoay chiều có phương trình i=5cos(100πt+π/2) A. Giá trị cực đại của dòng điện trong mạch là bao nhiêu Ampe?","a":"5"},
   {"c":"HN","q":"Đề 0001 – Ban đầu có N₀ hạt nhân của một chất phóng xạ. Sau 4 giờ, có 75% số hạt nhân N₀ bị phân rã. Chu kỳ bán rã của chất đó là bao nhiêu giờ?","a":"2"},
+  // ===== ĐỀ 0002 – PHẦN III: SA =====
+  // Đáp án: 1→1,96, 2→3,26, 3→0,96, 4→50, 5→2, 6→208
+
+  {"c":"TT","q":"Đề 0002 – Một khung dây dẫn có diện tích 0,20 m², điện trở 2,0 Ω đặt trong từ trường đều sao cho mặt phẳng khung vuông góc với cảm ứng từ. Cảm ứng từ ban đầu 0,25 T giảm đều về 0 trong 10⁻²s. Cường độ dòng điện cảm ứng là bao nhiêu ampe?","a":"1,96"},
+  {"c":"HN","q":"Đề 0002 – Xét phản ứng ²₁D + ²₁D → ³₂He + n. Khối lượng ²₁D là 2,0141 u; ³₂He là 3,0160 u; neutron là 1,0087 u. Xác định năng lượng toả ra của một phản ứng (MeV, hai chữ số thập phân).","a":"3,26"},
+  {"c":"HN","q":"Đề 0002 – Năng lượng toả ra khi tổng hợp hoàn toàn 1,00 g deuterium (phản ứng D+D→He+n, mỗi phản ứng toả 3,26 MeV) tương đương với năng lượng toả ra khi bao nhiêu gam ²³⁵₉₂U phân hạch hoàn toàn (mỗi hạt ²³⁵U toả 200,0 MeV)?","a":"0,96"},
+  {"c":"HN","q":"Đề 0002 – Mẫu chất phóng xạ X: ở thời điểm t₁ còn lại 20% hạt nhân; đến t₂=t₁+100 s chỉ còn 5%. Chu kì bán rã của chất phóng xạ đó là bao nhiêu giây?","a":"50"},
+  {"c":"HN","q":"Đề 0002 – Hạt nhân chì ²⁰⁸₈₂Pb có số nucleon là bao nhiêu?","a":"208"},
+// ===== ĐỀ 0003 – PHẦN III: SA =====
+// Đáp án: 1→8,01, 2→90, 3→35, 4→2, 5→0,63, 6→7,07
+
+{"c":"HN","q":"Đề 0003 – Biết khối lượng của proton; neutron; hạt nhân ¹⁶₈O lần lượt là 1,0073u; 1,0087u; 15,9904u và 1u=931,5 MeV/c². Năng lượng liên kết riêng của hạt nhân ¹⁶₈O bằng bao nhiêu MeV/nucleon? (Làm tròn hai chữ số thập phân)","a":"8,01"},
+{"c":"TT","q":"Đề 0003 – Từ thông qua khung dây có diện tích S đặt trong từ trường đều đạt giá trị cực đại khi các đường sức từ hợp với mặt phẳng khung dây một góc là bao nhiêu độ?","a":"90"},
+{"c":"HN","q":"Đề 0003 – Hạt nhân ³⁵₁₇Cl có bao nhiêu nucleon?","a":"35"},
+{"c":"TT","q":"Đề 0003 – Một thanh nam châm có mấy loại cực từ?","a":"2"},
+{"c":"TT","q":"Đề 0003 – Một dây dẫn có chiều dài 1 m mang dòng điện cường độ 4 A tạo với từ trường đều góc 90°. Từ trường tác dụng lên dây dẫn một lực có độ lớn 2,5 N. Độ lớn cảm ứng từ bằng bao nhiêu Tesla?","a":"0,63"},
+{"c":"TT","q":"Đề 0003 – Một dòng điện xoay chiều chạy qua điện trở R=20 Ω, nhiệt lượng tỏa ra trong 30 phút là 900 kJ. Cường độ dòng điện cực đại trong mạch là bao nhiêu Ampe?","a":"7,07"},
+// ===== ĐỀ 0004 – PHẦN III: SA =====
+// Đáp án: 1→7,85, 2→1,96, 3→3,26, 4→0,96, 5→97,5, 6→13,5
+
+{"c":"TT","q":"Đề 0004 – Một khung dây dẫn có diện tích 0,20 m², điện trở 2,0 Ω đặt trong từ trường đều sao cho mặt phẳng khung vuông góc với cảm ứng từ. Cảm ứng từ ban đầu 0,25 T giảm đều về 0 trong 10⁻²s. Độ lớn suất điện động cảm ứng trong khung dây là bao nhiêu vôn?","a":"7,85"},
+{"c":"HN","q":"Đề 0004 – Lò phản ứng của một tàu phá băng phân hạch trung bình 505 g ²³⁹Pu mỗi ngày. Hiệu suất lò phản ứng là 23%; mỗi hạt ²³⁹Pu phân hạch giải phóng 180,0 MeV. Tính công suất hoạt động của lò phản ứng (đơn vị MW, một chữ số thập phân).","a":"97,5"},
+{"c":"HN","q":"Đề 0004 – Lò phản ứng của một tàu phá băng phân hạch trung bình 505 g ²³⁹Pu mỗi ngày, chỉ 3,75% ²³⁹Pu trong khối nhiên liệu chịu phân hạch. Tính khối lượng của khối nhiên liệu ²³⁹Pu đưa vào lò mỗi ngày (đơn vị kilogam, một chữ số thập phân).","a":"13,5"},
+// ===== ĐỀ 0005 – PHẦN III: SA =====
+// Đáp án: 1→1,96, 2→30, 3→0,3, 4→0,36, 5→8,58, 6→12,5
+
+{"c":"TT","q":"Đề 0005 – Treo một thanh đồng có chiều dài 1 m và có khối lượng 200 gam vào hai sợi dây thẳng đứng trong từ trường đều có B=0,2 T chiều thẳng đứng từ dưới lên trên. Cho dòng điện một chiều qua thanh đồng thì thấy dây treo bị lệch so với phương thẳng một góc 60°. Lấy g=9,8 m/s². Lực căng của dây bằng bao nhiêu Niuton?","a":"1,96"},
+{"c":"TT","q":"Đề 0005 – Một đoạn dây dẫn thẳng MN dài 8 cm có dòng điện 5 A đặt trong từ trường đều có cảm ứng từ 0,6 T. Lực từ tác dụng lên đoạn dây có độ lớn là 0,12 N. Góc hợp bởi dây MN và đường cảm ứng từ là bao nhiêu độ?","a":"30"},
+{"c":"TT","q":"Đề 0005 – Một khung dây hình chữ nhật kín gồm 12 vòng dây, diện tích mỗi vòng là 10 cm², đặt trong từ trường đều có vectơ cảm ứng từ hợp với vectơ pháp tuyến góc 60°, B=0,05 T, R=0,1 Ω. Trong thời gian 0,01 s, cảm ứng từ giảm đều từ B đến 0. Cường độ dòng điện xuất hiện trong khung dây là bao nhiêu Ampe?","a":"0,3"},
+{"c":"HN","q":"Đề 0005 – Sau khoảng thời gian 1 ngày đêm 85% khối lượng ban đầu của một chất phóng xạ bị phân rã thành chất khác. Chu kì bán rã của chất phóng xạ đó là bao nhiêu ngày đêm?","a":"0,36"},
+{"c":"HN","q":"Đề 0005 – Hạt nhân ⁵⁶₂₆Fe có khối lượng hạt nhân là 55,9349 u. Biết mp=1,0073 u; mn=1,0087 u và 1uc²=931,5 MeV. Năng lượng liên kết riêng của hạt nhân ⁵⁶₂₆Fe bằng bao nhiêu MeV/nucleon?","a":"8,58"},
+{"c":"HN","q":"Đề 0005 – Một chất phóng xạ có chu kì bán rã là 3 giờ. Sau 9 giờ, so với lượng chất ban đầu thì lượng chất còn lại bằng bao nhiêu %?","a":"12,5"},
+// ===== ĐỀ 0006 – PHẦN III: SA =====
+// Đáp án: 1→0,32, 2→0,35, 3→45, 4→22,4, 5→12, 6→50
+
+{"c":"TT","q":"Đề 0006 – Một vòng dây dẫn phẳng có diện tích 160 cm² được đặt vuông góc với cảm ứng từ trong một từ trường đồng nhất nhưng có độ lớn tăng đều với tốc độ 0,020 T/s. Độ lớn suất điện động cảm ứng trong vòng dây là bao nhiêu mV?","a":"0,32"},
+{"c":"TT","q":"Đề 0006 – Một mặt có diện tích S=4,0 dm² được đặt trong từ trường đều và tạo với cảm ứng từ góc α=30°. Từ thông qua mặt S là Φ=12 mWb. Độ lớn của cảm ứng từ là bao nhiêu tesla?","a":"0,35"},
+{"c":"TT","q":"Đề 0006 – Treo đoạn dây dẫn có chiều dài 5 cm, khối lượng 5 g bằng hai dây mảnh nhẹ sao cho dây dẫn nằm ngang. Cảm ứng từ của từ trường hướng thẳng đứng xuống dưới, B=0,5 T và dòng điện đi qua dây dẫn là 2 A. Lấy g=10 m/s². Góc lệch của dây treo so với phương thẳng đứng là bao nhiêu độ?","a":"45"},
+{"c":"HN","q":"Đề 0006 – Cho phản ứng tổng hợp hạt nhân: ⁶₃Li + ²₁D → ⁴₂He + ᴬ_ZX. Biết mD=2,01410 u; mLi=6,01512 u; mHe=4,00260 u; 1uc²=931,5 MeV/c². Tính năng lượng toả ra của mỗi phản ứng (đơn vị MeV, lấy đến 2 chữ số có nghĩa).","a":"22,4"},
+{"c":"HN","q":"Đề 0006 – Số nucleon trung hoà trong hạt nhân ²³₁₁Na là bao nhiêu?","a":"12"},
+// ===== ĐỀ 0007 – PHẦN III: SA =====
+// Đáp án: 1→5, 2→129, 3→45, 4→0,43, 5→0,28, 6→40
+
+{"c":"TT","q":"Đề 0007 – Một khung dây dẫn có diện tích 0,20 m² đặt trong từ trường đều sao cho mặt phẳng của khung vuông góc với cảm ứng từ. Cảm ứng từ ban đầu 0,25 T và giảm đều về 0 trong 10⁻²s. Độ lớn suất điện động cảm ứng trong khung dây là bao nhiêu vôn?","a":"5"},
+{"c":"HN","q":"Đề 0007 – Một bệnh nhân được tiêm liều dược chất chứa technetium ⁹⁹₄₃Tc với độ phóng xạ 325 MBq. Chu kì bán rã của ⁹⁹₄₃Tc là 6,01 giờ. Độ phóng xạ của liều dược chất trong người bệnh nhân sau khi tiêm 8,00 giờ là bao nhiêu MBq? (3 chữ số có nghĩa)","a":"129"},
+{"c":"TT","q":"Đề 0007 – Một khung dây phẳng giới hạn diện tích S=50 cm² gồm 200 vòng dây đặt trong từ trường đều có cảm ứng từ B=0,5 T sao cho mặt phẳng khung dây hợp với vectơ cảm ứng từ một góc 60°. Từ thông qua diện tích giới hạn bởi khung dây bằng bao nhiêu Wb? (2 chữ số có nghĩa)","a":"0,43"},
+{"c":"TT","q":"Đề 0007 – Trong chẩn đoán bệnh bằng cộng hưởng từ, vòng tay kim loại có đường kính 6,0 cm và điện trở 0,01 Ω. Mặt phẳng vòng tay vuông góc với cảm ứng từ. Từ trường của máy giảm từ 1,5 T xuống 0,30 T trong 1,2 s. Cường độ dòng điện cảm ứng sinh ra trong vòng tay là bao nhiêu ampe?","a":"0,28"},
+{"c":"HN","q":"Đề 0007 – Một nhà máy điện hạt nhân sử dụng nguyên liệu ²³⁵₉₂U, mỗi phản ứng phân hạch tỏa 200 MeV, công suất phát điện 1500 MW và khối lượng ²³⁵₉₂U tiêu thụ trong một năm là 1440 kg. Coi 1 năm có 365 ngày và NA=6,02×10²³. Hiệu suất của nhà máy điện bằng bao nhiêu phần trăm?","a":"40"},
+// ===== ĐỀ 0008 – PHẦN III: SA =====
+// Đáp án: 1→5,2, 2→1,3, 3→2,4, 4→56, 5→0,22, 6→0,4
+
+{"c":"HN","q":"Đề 0008 – Biết năng lượng liên kết của hạt nhân ⁴⁰₁₈Ar là 208 MeV. Năng lượng liên kết riêng của hạt nhân ⁴⁰₁₈Ar là bao nhiêu MeV/nucleon? (Kết quả làm tròn đến hai chữ số có nghĩa)","a":"5,2"},
+{"c":"TT","q":"Đề 0008 – Khoảng cách từ Trái Đất đến Mặt Trăng là 3,8×10⁸ m. Lấy c=3,0×10⁸ m/s. Sóng điện từ truyền từ Trái Đất đến Mặt Trăng mất bao nhiêu giây?","a":"1,3"},
+{"c":"TT","q":"Đề 0008 – Một đoạn dây dẫn mang dòng điện có chiều dài 30 cm được đặt vuông góc với từ trường đều với cảm ứng từ 10 mT. Nếu có 5×10¹⁸ electron di chuyển qua một tiết diện thẳng trong mỗi giây. Hãy xác định độ lớn lực từ tác dụng lên dây dẫn theo đơn vị mN.","a":"2,4"},
+{"c":"HN","q":"Đề 0008 – Số nucleon mang điện trong hạt nhân ¹³⁰₅₆Ba là bao nhiêu?","a":"56"},
+{"c":"HN","q":"Đề 0008 – Hạt nhân nhôm ²⁷₁₃Al có khối lượng mAl=26,9972 amu. Biết mp=1,0073 amu, mn=1,0087 amu. Độ hụt khối của hạt nhân ²⁷₁₃Al là bao nhiêu amu? (làm tròn đến 2 chữ số có nghĩa)","a":"0,22"},
+{"c":"TT","q":"Đề 0008 – Một đoạn dây dẫn mang dòng điện cường độ 1,5 A đặt trong một từ trường đều thì chịu một lực từ có độ lớn 0,3 N. Nếu sau đó cường độ dòng điện tăng thêm 0,5 A thì lực từ tác dụng lên đoạn dây dẫn bằng bao nhiêu N?","a":"0,4"},
+// ===== ĐỀ 0009 – PHẦN III: SA =====
+// Đáp án: 1→2, 2→6, 3→0, 4→0,8, 5→4, 6→5670
+
+{"c":"HN","q":"Đề 0009 – Trong phóng xạ α thì hạt nhân con lùi mấy ô trong bảng hệ thống tuần hoàn?","a":"2"},
+{"c":"HN","q":"Đề 0009 – Một nguyên tử trung hòa có hạt nhân giống với một hạt trong chùm tia α. Tổng số hạt nuclôn và êlectron của nguyên tử này là bao nhiêu?","a":"6"},
+{"c":"TT","q":"Đề 0009 – Một đoạn dây có dòng điện đặt trong từ trường đều B. Để lực điện từ tác dụng lên dây cực tiểu thì góc giữa dây dẫn và véctơ cảm ứng từ phải bằng bao nhiêu độ?","a":"0"},
+{"c":"TT","q":"Đề 0009 – Một đoạn dây dẫn dài 5 cm đặt trong từ trường đều và vuông góc với véctơ cảm ứng từ. Dòng điện chạy qua dây có cường độ 0,75 A. Lực từ tác dụng lên đoạn dây dẫn đó là 3×10⁻² N. Độ lớn cảm ứng từ của từ trường là bao nhiêu T?","a":"0,8"},
+{"c":"HN","q":"Đề 0009 – Khi một hạt nhân nguyên tử phóng xạ lần lượt một tia α rồi một tia β⁻ thì số khối của hạt nhân nguyên tử sẽ giảm mấy?","a":"4"},
+{"c":"HN","q":"Đề 0009 – Người ta tiêm vào máu một người một lượng nhỏ dung dịch chứa chất phóng xạ ²⁴₁₁Na có độ phóng xạ H₀. Sau 5 giờ, người ta lấy ra 1 cm³ máu người đó thì thấy độ phóng xạ của lượng máu này là H₁=1,4×10⁻⁴·H₀. Biết chu kì bán rã của ²⁴₁₁Na là 15 giờ. Thể tích máu của người được tiêm là bao nhiêu cm³?","a":"5670"},
+// ===== ĐỀ 0010 – PHẦN III: SA =====
+// Đáp án: 1→45, 2→0,1, 3→-141, 4→9, 5→3,3, 6→2,1
+
+{"c":"TT","q":"Đề 0010 – Treo hai đầu của một thanh đồng có chiều dài 5 cm và có khối lượng 5 g vào hai sợi dây thẳng đứng cùng chiều dài trong một từ trường đều có B=0,5 T và có chiều thẳng đứng từ dưới lên trên. Cho dòng điện một chiều có cường độ I=2 A chạy qua thanh đồng thì thấy dây treo bị lệch so với phương thẳng đứng một góc a. Góc lệch a của dây treo so với phương thẳng đứng là bao nhiêu độ?","a":"45"},
+{"c":"TT","q":"Đề 0010 – Một cuộn dây dẫn dẹt hình tròn, gồm N=100 vòng, mỗi vòng có bán kính R=10 cm, mỗi mét dài của dây dẫn có điện trở R₀=0,5 Ω. Cuộn dây đặt trong từ trường đều có vectơ cảm ứng từ B vuông góc với mặt phẳng các vòng dây và có độ lớn B=10⁻² T giảm đều đến 0 trong thời gian Δt=10⁻²s. Cường độ dòng điện xuất hiện trong cuộn dây có độ lớn bằng bao nhiêu A?","a":"0,1"},
+{"c":"TT","q":"Đề 0010 – Tại thời điểm t, điện áp u=200√2·cos(100πt−π/2) V có giá trị 100√2 V và đang giảm. Sau thời điểm đó 1/300 s, điện áp này có giá trị là bao nhiêu V? (Kết quả làm tròn đến hàng đơn vị)","a":"-141"},
+{"c":"TT","q":"Đề 0010 – Một người định quấn một máy hạ áp lí tưởng để giảm điện áp từ U₁=220 V xuống U₂=20 V. Người đó đã quấn đúng số vòng của sơ cấp và thứ cấp nhưng do sơ suất lại quấn thêm một số vòng ngược chiều lên cuộn thứ cấp. Khi thử máy với điện áp U₁=220 V thì điện áp hai đầu cuộn thứ cấp đo được là U₂=11 V. Biết khi máy làm việc thì suất điện động hiệu dụng xuất hiện trên mỗi vòng dây là 1 vôn/vòng. Số vòng dây bị quấn ngược là bao nhiêu vòng?","a":"9"},
+{"c":"HN","q":"Đề 0010 – Hạt nhân urani ²³⁸₉₂U sau một chuỗi phân rã biến đổi thành hạt nhân chì ²⁰⁶₈₂Pb. Chu kì bán rã của ²³⁸₉₂U là 4,47×10⁹ năm. Một khối đá chứa 1,188×10²⁰ hạt nhân ²³⁸₉₂U và 6,239×10¹⁸ hạt nhân ²⁰⁶₈₂Pb. Tuổi của khối đá khi được phát hiện là a×10⁸ năm. Vậy a có giá trị là bao nhiêu? (1 chữ số thập phân)","a":"3,3"},
+{"c":"HN","q":"Đề 0010 – Dùng một hạt α có động năng 7,7 MeV bắn vào hạt nhân ¹⁴₇N đứng yên gây ra phản ứng: α + ¹⁴₇N → ¹₁p + ¹⁷₈O. Hạt nhân prôtôn bay ra theo phương vuông góc với phương bay tới của hạt α. Cho mα=4,0015u; mp=1,0073u; mN14=13,9992u; mO17=16,9947u; 1u=931,5 MeV/c². Động năng của hạt nhân ¹⁷₈O là bao nhiêu MeV? (1 chữ số thập phân)","a":"2,1"},
+
+
 ];
 
 
