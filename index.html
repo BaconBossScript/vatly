@@ -127,6 +127,25 @@ h2.sr{position:absolute;left:-9999px}
 .log-badge.add{background:#e8f5e9;color:var(--green)}
 .log-badge.fix{background:#fff8e1;color:var(--amber)}
 .log-badge.update{background:#e3f2fd;color:var(--blue)}
+
+/* SEARCH */
+.search-wrap{position:relative;margin-bottom:12px}
+.search-wrap input{width:100%;padding:9px 36px 9px 14px;font-size:13.5px;border:1px solid var(--border);border-radius:var(--radius);background:#f7f9fc;color:var(--text);font-family:inherit;outline:none;transition:border-color .15s}
+.search-wrap input:focus{border-color:#90caf9;background:#fff}
+.search-clear{position:absolute;right:10px;top:50%;transform:translateY(-50%);background:none;border:none;font-size:15px;color:var(--muted);cursor:pointer;display:none;line-height:1}
+.search-results{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);margin-bottom:12px;max-height:340px;overflow-y:auto;display:none}
+.sr-header{font-size:11px;color:var(--muted);padding:8px 14px 4px;text-transform:uppercase;letter-spacing:.4px;font-weight:600;border-bottom:1px solid #eef1f6}
+.sr-item{padding:10px 14px;border-bottom:1px solid #eef1f6;cursor:pointer;transition:background .1s}
+.sr-item:last-child{border-bottom:none}
+.sr-item:hover{background:#eef3fa}
+.sr-item-q{font-size:13px;color:var(--text);line-height:1.5;margin-bottom:4px}
+.sr-item-q mark{background:#fff3cd;border-radius:2px;padding:0 1px;color:var(--text)}
+.sr-item-meta{display:flex;gap:6px;align-items:center}
+.sr-badge-type{font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px}
+.sr-badge-chu{font-size:10px;padding:2px 7px;border-radius:10px;background:#e8edf5;color:var(--muted)}
+.sr-no-result{padding:16px 14px;font-size:13px;color:var(--muted);text-align:center}
+
+
 </style>
 </head>
 <body>
@@ -180,29 +199,17 @@ h2.sr{position:absolute;left:-9999px}
   <button class="btn primary" id="btn-next" onclick="go(1)" style="display:none">Tiếp →</button>
 </div>
 
-<!-- UPDATE LOG -->
-<!-- <button class="log-toggle" onclick="toggleLog()">
-  📋 Update Log <span id="log-arrow">▼</span>
-</button>
-<div class="log-panel" id="log-panel">
-  <div class="log-entry">
-    <div class="log-date">20/04/2026 – v1.2</div> 
-    <span class="log-badge fix">FIX</span> Nhúng dữ liệu <code>li12_data.js</code> trực tiếp vào HTML – sửa lỗi các nút bấm không hoạt động khi mở file bằng trình duyệt (do trình duyệt chặn tải script ngoài qua giao thức <code>file://</code>).
-  </div>
-  <div class="log-entry">
-    <div class="log-date">20/04/2026 – v1.1</div>
-    <span class="log-badge fix">FIX</span> Phần trả lời ngắn (SA): sau khi xem đáp án, bấm ✓ Đúng / ✗ Sai để ghi nhận kết quả thay vì chỉ tự đánh giá mà không phản ánh vào thống kê.<br>
-    <span class="log-badge update">UPDATE</span> Tách dữ liệu câu hỏi sang file riêng <code>li12_data.js</code> để dễ thêm/sửa.<br>
-    <span class="log-badge fix">FIX</span> Xóa phần giải thích (explanation) để giảm dung lượng file.
-  </div>
-  <div class="log-entry">
-    <div class="log-date">Ban đầu – v1.0</div>
-    <span class="log-badge add">ADD</span> Tạo bộ flashcard Vật Lí 12 CK2: Chương 3 (Từ Trường) + Chương 4 (Vật lý Hạt Nhân).<br>
-    <span class="log-badge add">ADD</span> 3 loại câu hỏi: Trắc nghiệm (MC), Đúng/Sai (TF), Trả lời ngắn (SA).
-  </div>
-</div> -->
-
 </div><!-- /container -->
+
+<!-- SEARCH BOX -->
+<div class="search-wrap" id="search-wrap">
+  <input type="text" id="search-input" placeholder="🔍 Tìm câu hỏi, chủ đề..." autocomplete="off" oninput="onSearch(this.value)" />
+  <button class="search-clear" id="search-clear" onclick="clearSearch()" title="Xóa">✕</button>
+</div>
+<div class="search-results" id="search-results">
+  <div class="sr-header" id="sr-header"></div>
+  <div id="sr-list"></div>
+</div>
 
 <!-- Dữ liệu câu hỏi (nhúng inline để chạy được khi mở file trực tiếp) -->
 <script src="li12_data.js"></script>
@@ -536,6 +543,111 @@ function toggleLog(){
   setChu('ALL', chuBtn);
   setType('ALL', typeBtn);
 })();
+
+/* ── SEARCH ── */
+function getAllQuestions(){
+  var all=[];
+  MC.forEach(function(q){var x=Object.assign({},q);x._type='MC';all.push(x);});
+  TF.forEach(function(q){var x=Object.assign({},q);x._type='TF';all.push(x);});
+  SA.forEach(function(q){var x=Object.assign({},q);x._type='SA';all.push(x);});
+  return all;
+}
+
+function highlight(text, kw){
+  if(!kw) return text;
+  var re = new RegExp('('+kw.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');
+  return text.replace(re,'<mark>$1</mark>');
+}
+
+function onSearch(val){
+  var kw = val.trim();
+  document.getElementById('search-clear').style.display = kw ? 'block' : 'none';
+  var box = document.getElementById('search-results');
+  var list = document.getElementById('sr-list');
+  var hdr = document.getElementById('sr-header');
+  if(!kw){ box.style.display='none'; return; }
+
+  var kwLow = kw.toLowerCase();
+  var all = getAllQuestions();
+  var CHU = {'TT':'Từ Trường','HN':'Vật lý Hạt nhân'};
+  var TYPE_LABEL = {'MC':'Trắc nghiệm','TF':'Đúng/Sai','SA':'Trả lời ngắn'};
+  var TYPE_COLOR = {'MC':'background:var(--blue-light);color:var(--blue)',
+                    'TF':'background:var(--amber-light);color:var(--amber)',
+                    'SA':'background:var(--purple-light);color:var(--purple)'};
+
+  var hits = all.filter(function(q){
+    var inQ = q.q && q.q.toLowerCase().indexOf(kwLow)>=0;
+    var inS = q.s && q.s.toLowerCase().indexOf(kwLow)>=0;
+    var inC = CHU[q.c] && CHU[q.c].toLowerCase().indexOf(kwLow)>=0;
+    var inO = q.o && q.o.some(function(o){return o.toLowerCase().indexOf(kwLow)>=0;});
+    var inStmts = q.stmts && q.stmts.some(function(s){return s.t.toLowerCase().indexOf(kwLow)>=0;});
+    return inQ||inS||inC||inO||inStmts;
+  });
+
+  box.style.display = 'block';
+  hdr.textContent = hits.length ? hits.length + ' kết quả cho "' + kw + '"' : '';
+  list.innerHTML = '';
+
+  if(!hits.length){
+    list.innerHTML = '<div class="sr-no-result">Không tìm thấy câu hỏi nào.</div>';
+    return;
+  }
+
+  hits.slice(0,40).forEach(function(q){
+    var item = document.createElement('div'); item.className='sr-item';
+    var qText = q.q || '';
+    item.innerHTML =
+      '<div class="sr-item-q">'+highlight(qText,kw)+'</div>'+
+      '<div class="sr-item-meta">'+
+        '<span class="sr-badge-type" style="'+TYPE_COLOR[q._type]+'">'+TYPE_LABEL[q._type]+'</span>'+
+        '<span class="sr-badge-chu">'+(q.s||CHU[q.c]||q.c)+'</span>'+
+      '</div>';
+    item.onclick = function(){ jumpToQuestion(q); };
+    list.appendChild(item);
+  });
+}
+
+function jumpToQuestion(target){
+  // Đặt bộ lọc phù hợp
+  var chuBtn = document.querySelector('#chu-tabs .tab:last-child');  // Tất cả
+  var typeBtn = document.querySelector('#type-tabs .ttab:last-child'); // Tất cả
+  curChu='ALL'; curType='ALL';
+  document.querySelectorAll('#chu-tabs .tab').forEach(function(t){t.classList.remove('active');});
+  chuBtn.classList.add('active');
+  document.querySelectorAll('#type-tabs .ttab').forEach(function(t){
+    t.classList.remove('active-mc','active-tf','active-sa','active-all');
+  });
+  typeBtn.classList.add('active-all');
+
+  pool = filterPool();
+  cur=0; correct=0; wrong=0;
+  answered=[];
+  for(var i=0;i<pool.length;i++) answered.push(null);
+  tfTemp=[];
+
+  // Tìm vị trí câu hỏi trong pool
+  var idx = pool.findIndex(function(q){
+    return q.q===target.q && q._type===target._type && q.c===target.c;
+  });
+  if(idx>=0) cur=idx;
+
+  document.getElementById('s-total').textContent=pool.length;
+  document.getElementById('s-correct').textContent=0;
+  document.getElementById('s-wrong').textContent=0;
+  var CHU={'TT':'Từ Trường','HN':'Vật lý Hạt nhân'};
+  var tLabel={'MC':'Trắc nghiệm','TF':'Đúng/Sai','SA':'Trả lời ngắn','ALL':'Tất cả'};
+  document.getElementById('subtitle').textContent='Tất cả chương – Tất cả – '+pool.length+' câu';
+
+  clearSearch();
+  render();
+  document.getElementById('qcard').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function clearSearch(){
+  document.getElementById('search-input').value='';
+  document.getElementById('search-clear').style.display='none';
+  document.getElementById('search-results').style.display='none';
+}
 
 </script>
 </body>
