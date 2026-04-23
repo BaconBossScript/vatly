@@ -401,9 +401,14 @@ function renderMC(q){
   body.appendChild(optDiv);
   if(answered[cur]!==null){
     document.getElementById('btn-next').style.display = '';
-    // Tìm chữ cái hiển thị của đáp án đúng
     var displayKey = keys[order.indexOf(q.a)];
     document.getElementById('nav-info').textContent = answered[cur]===q.a?'✓ Đúng':'✗ Sai – Đáp án: '+displayKey;
+    if(q.e){
+      var expDiv = document.createElement('div');
+      expDiv.style.cssText = 'margin-top:12px;padding:10px 14px;background:#f0f4ff;border-left:3px solid var(--blue);border-radius:var(--radius);font-size:13px;color:var(--muted);line-height:1.6';
+      expDiv.innerHTML = '<strong style="display:block;font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--blue);margin-bottom:4px">💡 Giải thích</strong>' + q.e;
+      body.appendChild(expDiv);
+    }
   }
 }
 
@@ -478,7 +483,14 @@ function confirmTF(){
   else if(numCorrect===0){ wrong++; document.getElementById('s-wrong').textContent=wrong; document.getElementById('nav-info').textContent='✗ Sai hết'; scheduleRepeat(q,false); }
   else { document.getElementById('nav-info').textContent=numCorrect+'/'+q.stmts.length+' câu đúng'; scheduleRepeat(q,false); }
   document.getElementById('btn-next').style.display = '';
+  document.getElementById('btn-next').style.display = '';
   renderTF(q);
+  if(q.e){
+    var expDiv = document.createElement('div');
+    expDiv.style.cssText = 'margin-top:12px;padding:10px 14px;background:#f0f4ff;border-left:3px solid var(--blue);border-radius:var(--radius);font-size:13px;color:var(--muted);line-height:1.6';
+    expDiv.innerHTML = '<strong style="display:block;font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--blue);margin-bottom:4px">💡 Giải thích</strong>' + q.e;
+    document.getElementById('q-body').appendChild(expDiv);
+  }
   saveProgress();
 
 }
@@ -511,6 +523,12 @@ function renderSA(q){
     var aText = document.createTextNode(q.a);
     ans.appendChild(verdict); ans.appendChild(label); ans.appendChild(aText);
     body.appendChild(ans);
+    if(q.e){
+      var expDiv = document.createElement('div');
+      expDiv.style.cssText = 'margin-top:12px;padding:10px 14px;background:#f0f4ff;border-left:3px solid var(--blue);border-radius:var(--radius);font-size:13px;color:var(--muted);line-height:1.6';
+      expDiv.innerHTML = '<strong style="display:block;font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--blue);margin-bottom:4px">💡 Giải thích</strong>' + q.e;
+      body.appendChild(expDiv);
+    }
     document.getElementById('btn-next').style.display = '';
   } else {
     var hint = document.createElement('div');
