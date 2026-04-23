@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+  <link rel="icon" href="beecon_hub_beemas.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Flashcard Vật Lí 12 – tốt nghiệp</title>
@@ -144,7 +145,14 @@ h2.sr{position:absolute;left:-9999px}
 .sr-badge-type{font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px}
 .sr-badge-chu{font-size:10px;padding:2px 7px;border-radius:10px;background:#e8edf5;color:var(--muted)}
 .sr-no-result{padding:16px 14px;font-size:13px;color:var(--muted);text-align:center}
-
+.sr-no-result{padding:16px 14px;font-size:13px;color:var(--muted);text-align:center}
+.btn-shuffle{font-size:12px;padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:transparent;cursor:pointer;color:var(--muted);font-weight:500;transition:all .15s}
+.btn-shuffle:hover{background:#eef3fa}
+.btn-shuffle.on{background:#512da8;border-color:#512da8;color:#fff}
+.btn-review{font-size:12px;padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:transparent;cursor:pointer;color:var(--muted);font-weight:500;transition:all .15s;margin-left:4px}
+.btn-review:hover{background:#eef3fa}
+.btn-review.on{background:#b52b2b;border-color:#b52b2b;color:#fff}
+.sr-tag{font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px;background:#fce8e8;color:#b52b2b;margin-left:6px}
 
 </style>
 </head>
@@ -178,6 +186,8 @@ h2.sr{position:absolute;left:-9999px}
   <div class="prog-wrap">
     <div class="prog-bar"><div class="prog-fill" id="prog-fill" style="width:0%"></div></div>
     <div class="prog-label" id="prog-label">0 / 0</div>
+    <button class="btn-shuffle" id="btn-shuffle" onclick="toggleShuffle(this)" title="Xáo trộn">🔀</button>
+    <button class="btn-review" id="btn-review" onclick="toggleReview(this)" title="Ôn câu sai">📕</button>
   </div>
 </div>
 
@@ -307,30 +317,43 @@ function renderMC(q){
   body.innerHTML = '';
   var keys = ['A','B','C','D'];
   var optDiv = document.createElement('div'); optDiv.className = 'opts';
-  q.o.forEach(function(o,i){
+
+  if(shuffleOn && answered[cur]===null && !q._shuffledIdx){
+    q._shuffledIdx = fisherYates([0,1,2,3]);
+  }
+  if(!shuffleOn) q._shuffledIdx = null;
+  var order = q._shuffledIdx || [0,1,2,3];
+
+  order.forEach(function(origIdx, displayPos){
+    var o = q.o[origIdx];
     var btn = document.createElement('button'); btn.className = 'opt';
-    btn.innerHTML = '<span class="opt-key">'+keys[i]+'.</span>'+o;
+    btn.innerHTML = '<span class="opt-key">'+keys[displayPos]+'.</span>'+o;
     if(answered[cur]!==null){
       btn.disabled = true;
-      if(i===q.a) btn.classList.add('correct');
-      else if(i===answered[cur]) btn.classList.add('wrong');
+      if(origIdx===q.a) btn.classList.add('correct');
+      else if(origIdx===answered[cur]) btn.classList.add('wrong');
     } else {
-      (function(idx){ btn.onclick = function(){ answerMC(idx); }; })(i);
+      (function(idx){ btn.onclick = function(){ answerMC(idx); }; })(origIdx);
     }
     optDiv.appendChild(btn);
-  });
+  });                              // ← thêm }); này
+
   body.appendChild(optDiv);
   if(answered[cur]!==null){
     document.getElementById('btn-next').style.display = '';
-    document.getElementById('nav-info').textContent = answered[cur]===q.a?'✓ Đúng':'✗ Sai – Đáp án: '+keys[q.a];
+    // Tìm chữ cái hiển thị của đáp án đúng
+    var displayKey = keys[order.indexOf(q.a)];
+    document.getElementById('nav-info').textContent = answered[cur]===q.a?'✓ Đúng':'✗ Sai – Đáp án: '+displayKey;
   }
 }
 
 function answerMC(i){
   var q = pool[cur];
   answered[cur] = i;
-  if(i===q.a){ correct++; document.getElementById('s-correct').textContent=correct; }
+  var isOk = (i===q.a);
+  if(isOk){ correct++; document.getElementById('s-correct').textContent=correct; }
   else { wrong++; document.getElementById('s-wrong').textContent=wrong; }
+  scheduleRepeat(q, isOk);
   render();
 }
 
@@ -390,9 +413,9 @@ function confirmTF(){
   tfTemp = [];
   var numCorrect = 0;
   q.stmts.forEach(function(s,i){ if(answered[cur][i]===s.a) numCorrect++; });
-  if(numCorrect===q.stmts.length){ correct++; document.getElementById('s-correct').textContent=correct; document.getElementById('nav-info').textContent='✓ Đúng hết!'; }
-  else if(numCorrect===0){ wrong++; document.getElementById('s-wrong').textContent=wrong; document.getElementById('nav-info').textContent='✗ Sai hết'; }
-  else { document.getElementById('nav-info').textContent=numCorrect+'/'+q.stmts.length+' câu đúng'; }
+  if(numCorrect===q.stmts.length){ correct++; document.getElementById('s-correct').textContent=correct; document.getElementById('nav-info').textContent='✓ Đúng hết!'; scheduleRepeat(q,true); }
+  else if(numCorrect===0){ wrong++; document.getElementById('s-wrong').textContent=wrong; document.getElementById('nav-info').textContent='✗ Sai hết'; scheduleRepeat(q,false); }
+  else { document.getElementById('nav-info').textContent=numCorrect+'/'+q.stmts.length+' câu đúng'; scheduleRepeat(q,false); }
   document.getElementById('btn-next').style.display = '';
   renderTF(q);
 }
@@ -495,6 +518,7 @@ function answerSA(){
     document.getElementById('s-wrong').textContent = wrong;
     answered[cur] = 'wrong';
   }
+  scheduleRepeat(q, isCorrect);
   document.getElementById('nav-info').textContent = isCorrect ? '✓ Đúng' : '✗ Sai';
   renderSA(q);
 }
@@ -649,6 +673,84 @@ function clearSearch(){
   document.getElementById('search-results').style.display='none';
 }
 
+/* ── SHUFFLE ── */
+var shuffleOn = false;
+
+function fisherYates(arr){
+  for(var i=arr.length-1;i>0;i--){
+    var j=Math.floor(Math.random()*(i+1));
+    var t=arr[i]; arr[i]=arr[j]; arr[j]=t;
+  }
+  return arr;
+}
+
+function toggleShuffle(el){
+  shuffleOn = !shuffleOn;
+  el.classList.toggle('on', shuffleOn);
+  el.title = shuffleOn ? 'Đang xáo trộn – nhấn để tắt' : 'Xáo trộn';
+  // Xáo thứ tự câu hỏi và reset
+  pool = shuffleOn ? fisherYates(filterPool()) : filterPool();
+  cur = 0; correct = 0; wrong = 0;
+  answered = [];
+  for(var i=0;i<pool.length;i++) answered.push(null);
+  tfTemp = [];
+  document.getElementById('s-correct').textContent = 0;
+  document.getElementById('s-wrong').textContent = 0;
+  render();
+}
+
+/* ── SPACED REPETITION ── */
+// Sau khi trả lời, chèn lại câu sai vào pool sau 3 câu, câu đúng không lặp
+var srEnabled = true; // luôn bật ngầm
+
+function scheduleRepeat(q, isCorrect){
+  if(!srEnabled) return;
+  if(isCorrect) return; // câu đúng không lặp
+  // chèn bản sao vào vị trí cur+3 (hoặc cuối nếu gần hết)
+  var clone = Object.assign({}, q);
+  clone._isRepeat = true;
+  clone._shuffledIdx = null;
+  var insertAt = Math.min(cur + 3, pool.length);
+  pool.splice(insertAt, 0, clone);
+  answered.splice(insertAt, 0, null);
+}
+
+/* ── CHẾ ĐỘ ÔN SAI ── */
+var reviewMode = false;
+
+function toggleReview(el){
+  // Thu thập các câu đã sai trong phiên hiện tại
+  var wrongList = [];
+  for(var i=0;i<pool.length;i++){
+    var st = answered[i];
+    var isWrong = (st==='wrong') ||
+                  (typeof st==='number' && st!==pool[i].a) ||
+                  (Array.isArray(st) && st.some(function(v,j){ return v!==pool[i].stmts[j].a; }));
+    if(isWrong) wrongList.push(Object.assign({}, pool[i], {_shuffledIdx:null, _isRepeat:false}));
+  }
+  if(!wrongList.length){
+    alert('Chưa có câu nào sai trong phiên này!');
+    return;
+  }
+  reviewMode = !reviewMode;
+  el.classList.toggle('on', reviewMode);
+
+  if(reviewMode){
+    pool = wrongList;
+    answered = [];
+    for(var i=0;i<pool.length;i++) answered.push(null);
+    cur=0; correct=0; wrong=0; tfTemp=[];
+    document.getElementById('s-total').textContent = pool.length;
+    document.getElementById('s-correct').textContent = 0;
+    document.getElementById('s-wrong').textContent = 0;
+    document.getElementById('subtitle').textContent = '📕 Ôn sai – ' + pool.length + ' câu';
+    render();
+  } else {
+    reviewMode = false;
+    el.classList.remove('on');
+    resetPool();
+  }
+}
 </script>
 </body>
 </html>
