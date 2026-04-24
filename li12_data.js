@@ -649,7 +649,7 @@ var TF = [
       {"t": "c) Cảm ứng từ do dòng điện I₁ gây ra tại M có chiều hướng sang phải.", "a": false},
       {"t": "d) Cảm ứng từ do cả hai dòng điện gây ra tại M có độ lớn là 1,25×10⁻⁵ T.", "a": true}
     ],
-    "e": "M cách I₂ là 4 cm; M cách I₁ là 4+4=8 cm (M nằm ngoài khoảng I₁I₂, về phía I₂). B₂ = 2×10⁻⁷×5/0,04 = 2,5×10⁻⁵ T. B₁ = 2×10⁻⁷×5/0,08 = 1,25×10⁻⁵ T ✓ (b đúng). a) SAI – Chiều B₂ tại M phụ thuộc chiều I₂ và vị trí M (áp dụng quy tắc đinh ốc); không đủ thông tin để khẳng định 'sang trái' mà theo đáp án là sai. c) SAI – Chiều B₁ tại M tương tự cần áp dụng quy tắc; theo đáp án là sai (không phải sang phải). d) ĐÚNG – Hai dòng ngược chiều, M nằm ngoài về phía I₂: B₁ và B₂ ngược chiều nhau → B_tổng = |B₂ − B₁| = 2,5×10⁻⁵ − 1,25×10⁻⁵ = 1,25×10⁻⁵ T ✓."
+    "e": "M cách I₂ là 4 cm; M cách I₁ là 4+4=8 cm (M nằm ngoài khoảng I₁I₂, về phía I₂). B₂ = 2×10⁻⁷×5/0,04 = 2,5×10⁻⁵ T. B₁ = 2×10⁻⁷×5/0,08 = 1,25×10⁻⁵ T ✓ (b đúng). a) SAI – Chiều B₂ tại M phụ thuộc chiều I₂ và vị trí M (áp dụng quy tắc đinh ốc); không đủ thông tin để khẳng định 'sang trái' mà theo đáp án là sai. b) ĐÚNG – B₁ = 1,25×10⁻⁵ T ✓. c) SAI – Chiều B₁ tại M tương tự cần áp dụng quy tắc; theo đáp án là sai (không phải sang phải). d) ĐÚNG – Hai dòng ngược chiều, M nằm ngoài về phía I₂: B₁ và B₂ ngược chiều nhau → B_tổng = |B₂ − B₁| = 2,5×10⁻⁵ − 1,25×10⁻⁵ = 1,25×10⁻⁵ T ✓."
   },
 
   // ===== ĐỀ 0007 – PHẦN II: TF =====
