@@ -229,6 +229,8 @@ h2.sr{position:absolute;left:-9999px}
     </div>
   </div>
   <div class="tab-row" id="chu-tabs">
+    <button class="tab" onclick="setChu('N',this)">Chương 1: Vật lý nhiệt</button>
+    <button class="tab" onclick="setChu('LT',this)">Chương 2: Khí Lý Tưởng</button>
     <button class="tab" onclick="setChu('TT',this)">Chương 3: Từ Trường</button>
     <button class="tab" onclick="setChu('HN',this)">Chương 4: Vật lý Hạt nhân</button>
     <button class="tab active" onclick="setChu('ALL',this)">Tất cả</button>
@@ -290,7 +292,7 @@ var curChu = 'ALL', curType = 'ALL';
 var pool = [], cur = 0, correct = 0, wrong = 0, answered = [];
 var tfTemp = [];
 
-var CHU_LABEL = {'TT':'Từ Trường','HN':'Vật lý Hạt nhân'};
+var CHU_LABEL = {'TT':'Từ Trường','HN':'Vật lý Hạt nhân', 'N':'Vật lý nhiệt', 'LT':'Khí lí tưởng'};
 
 function filterPool(){
   var all = [];
@@ -681,7 +683,7 @@ function onSearch(val){
 
   var kwLow = kw.toLowerCase();
   var all = getAllQuestions();
-  var CHU = {'TT':'Từ Trường','HN':'Vật lý Hạt nhân'};
+  var CHU = {'TT':'Từ Trường','HN':'Vật lý Hạt nhân','N':'Vật lý nhiệt', 'LT':'Khí lí tưởng'};
   var TYPE_LABEL = {'MC':'Trắc nghiệm','TF':'Đúng/Sai','SA':'Trả lời ngắn'};
   var TYPE_COLOR = {'MC':'background:var(--blue-light);color:var(--blue)',
                     'TF':'background:var(--amber-light);color:var(--amber)',
@@ -746,7 +748,7 @@ function jumpToQuestion(target){
   document.getElementById('s-total').textContent=pool.length;
   document.getElementById('s-correct').textContent=0;
   document.getElementById('s-wrong').textContent=0;
-  var CHU={'TT':'Từ Trường','HN':'Vật lý Hạt nhân'};
+  var CHU={'TT':'Từ Trường','HN':'Vật lý Hạt nhân','N':'Vật lý nhiệt', 'LT':'Khí lí tưởng'};
   var tLabel={'MC':'Trắc nghiệm','TF':'Đúng/Sai','SA':'Trả lời ngắn','ALL':'Tất cả'};
   document.getElementById('subtitle').textContent='Tất cả chương – Tất cả – '+pool.length+' câu';
 
